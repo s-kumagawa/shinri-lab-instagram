@@ -1,6 +1,9 @@
 """Instagram API (Instagram Login) の薄いラッパー。
 アクセストークンは環境のネットワークシークレットとしてプロキシが
 Authorization ヘッダーに注入する（コードやリポジトリには置かない）。
+config.json の api_host:
+  graph.facebook.com  … 統合ログイン（システムユーザーのトークン、期限なし）← 現在はこちら
+  graph.instagram.com … 旧「Instagramログイン」方式（新しいアプリでは使えない）
 
 使い方:
   python3 tools/ig_api.py whoami
@@ -17,7 +20,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG_PATH = os.path.join(ROOT, 'config.json')
 CFG = json.load(open(CFG_PATH)) if os.path.exists(CFG_PATH) else {}
 VER = CFG.get('api_version', 'v23.0')
-BASE = f'https://graph.instagram.com/{VER}'
+HOST = CFG.get('api_host', 'graph.facebook.com')
+BASE = f'https://{HOST}/{VER}'
 HDR = {'Authorization': 'Bearer injected-by-proxy'}
 JST = dt.timezone(dt.timedelta(hours=9))
 
@@ -43,8 +47,19 @@ def call(method, path, **params):
 def ig_id():
     if CFG.get('ig_user_id'):
         return CFG['ig_user_id']
-    me = call('GET', 'me', fields='user_id,username')
-    CFG['ig_user_id'] = str(me['user_id']); CFG['username'] = me.get('username')
+    if HOST == 'graph.instagram.com':
+        me = call('GET', 'me', fields='user_id,username')
+        CFG['ig_user_id'] = str(me['user_id']); CFG['username'] = me.get('username')
+    else:
+        acc = call('GET', 'me/assigned_instagram_accounts', fields='id,username').get('data', [])
+        if not acc:
+            pages = call('GET', 'me/accounts', fields='instagram_business_account{id,username}').get('data', [])
+            acc = [p['instagram_business_account'] for p in pages if p.get('instagram_business_account')]
+        if not acc:
+            raise ApiError('トークンに Instagram アカウントが割り当てられていない（ビジネス設定 → システムユーザー → アセットを割り当てる）')
+        want = CFG.get('username')
+        a = next((x for x in acc if want and x.get('username') == want), acc[0])
+        CFG['ig_user_id'] = str(a['id']); CFG['username'] = a.get('username')
     json.dump(CFG, open(CFG_PATH, 'w'), ensure_ascii=False, indent=1)
     return CFG['ig_user_id']
 
@@ -162,7 +177,10 @@ def comments(days=7):
 
 if __name__ == '__main__':
     cmd = sys.argv[1]
-    if cmd == 'whoami': print(call('GET', 'me', fields='user_id,username,account_type,followers_count,media_count'))
+    if cmd == 'whoami':
+        uid = ig_id()
+        print(call('GET', 'me', fields='id,name'))
+        print(call('GET', uid, fields='id,username,name,followers_count,follows_count,media_count'))
     elif cmd == 'limit': print(call('GET', f'{ig_id()}/content_publishing_limit', fields='config,quota_usage'))
     elif cmd == 'publish': publish(sys.argv[2], sys.argv[3])
     elif cmd == 'insights': insights()

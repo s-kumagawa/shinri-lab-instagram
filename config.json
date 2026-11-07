@@ -4,5 +4,7 @@
  "ig_user_id": "",
  "username": "",
  "token_saved_on": "2026-11-07",
- "handle_in_images": "@shinri.lab.jp"
+ "handle_in_images": "@shinri.lab.jp",
+ "api_host": "graph.facebook.com",
+ "token_type": "system_user (no expiry)"
 }
