@@ -11,7 +11,9 @@
 
 ## 1. 健康チェック
 - `python3 tools/ig_api.py whoami`
-- API は `config.json` の `api_host`（現在は graph.facebook.com、統合ログインのシステムユーザートークン＝有効期限なし）を使う。
+- API は `config.json` の `api_host`（現在は graph.facebook.com、統合ログインのシステムユーザートークン）を使う。
+- トークンの有効期限は60日（`config.json` の `token_expires_on`）。**期限の10日前から**、毎日の報告の
+  「オーナーの対応が必要なこと」に「〇月〇日にトークンが切れます。運用ガイド C の手順で更新してください」と書く。
 - 認証エラー（code 190 / 401）や「Instagram アカウントが割り当てられていない」エラーが出たら、**投稿は中止**し、
   最後のメッセージで `運用ガイド.md` の「C. トークンに問題が出たとき」の手順をオーナーに伝えて終了する。
 - `config.json` の `ig_user_id` が空なら、whoami の結果で埋めてコミットする。
