@@ -1,11 +1,15 @@
 {
  "api_version": "v23.0",
  "github_repo": "s-kumagawa/shinri-lab-instagram",
- "ig_user_id": "",
- "username": "",
+ "ig_user_id": "17841473061253620",
+ "username": "shinri.lab.jp",
  "token_saved_on": "2026-11-08",
  "handle_in_images": "@shinri.lab.jp",
  "api_host": "graph.facebook.com",
  "token_type": "system_user (60 days)",
- "token_expires_on": "2027-01-07"
+ "token_expires_on": "2027-01-07",
+ "baseline": {
+  "date": "2026-11-08",
+  "followers": 11
+ }
 }
