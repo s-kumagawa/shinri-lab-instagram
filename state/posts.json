@@ -25,6 +25,25 @@
   "slug": "2026-11-10_spotlight",
   "topic": "メンタル",
   "hook": "あなたの失敗、実は誰も覚えていない",
+  "test": null,
+  "d1": {
+   "measured_at": "2026-11-11",
+   "reach": 25,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "views": 25,
+   "avg_watch_ms": 4900
+  }
+ },
+ {
+  "media_id": "18101732564093082",
+  "permalink": "https://www.instagram.com/p/DfmTAYCF4rt/",
+  "timestamp": "2026-11-11T10:45:13+0000",
+  "type": "carousel",
+  "slug": "2026-11-11_procrastination",
+  "topic": "習慣",
+  "hook": "つい後回しにしてしまうあなたへ",
   "test": null
  }
 ]
