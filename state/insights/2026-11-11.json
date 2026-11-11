@@ -1,0 +1,63 @@
+{
+ "taken_at": "2026-11-11T19:43:34.559867+09:00",
+ "account": {
+  "id": "17841473061253620",
+  "followers_count": 11,
+  "follows_count": 0,
+  "media_count": 2,
+  "username": "shinri.lab.jp",
+  "day": {
+   "reach": 1,
+   "views": 1,
+   "accounts_engaged": 0,
+   "total_interactions": 0,
+   "profile_links_taps": 0
+  }
+ },
+ "media": [
+  {
+   "id": "18111490997459245",
+   "caption": "あなたの失敗、実は誰も覚えていません。\n\n心理学者ギロビッチらの実験では、学生に「恥ずかしいTシャツ」を着せて教室に入っ",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DfjuWPtEU77/",
+   "timestamp": "2026-11-10T10:46:47+0000",
+   "insights": {
+    "reach": 25,
+    "views": 25,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 4900,
+    "ig_reels_video_view_total_time": 142104,
+    "saved_rate_%": 0.0,
+    "shares_rate_%": 0.0
+   }
+  },
+  {
+   "id": "18143666329723011",
+   "caption": "会話が苦手な人ほど知ってほしい「人に好かれる心理学」5選🧠\n\n「さっきの会話、変じゃなかったかな…」と思ったことはありま",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "permalink": "https://www.instagram.com/p/DffzSGQFEdJ/",
+   "timestamp": "2026-11-08T22:12:41+0000",
+   "insights": {
+    "reach": 0,
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "follows": 0,
+    "profile_visits": 0
+   }
+  }
+ ]
+}
