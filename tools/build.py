@@ -3,11 +3,12 @@
 出力: 画像はJPEG（Instagram APIはJPEGのみ受付）、manifest.json、caption.txt、preview.jpg
 仕様の形式:
  {"slug":"peak-end","type":"carousel|reel","topic":"テーマ","hook":"冒頭の一言","test":"A/Bテストのラベル(任意)",
-  "content":{...carousel.py または reel.py の形式...},"caption":"キャプション全文"}"""
+  "content":{...carousel.py または reel.py 冒頭の説明の形式...},"caption":"キャプション全文"}
+リールはナレーションつき（tools/voice.py）。キャプションに voice.CREDIT（音声のクレジット）が無ければ自動で足す。"""
 import json, os, sys, datetime as dt, tempfile
 from PIL import Image
 sys.path.insert(0, os.path.dirname(__file__))
-import carousel, reel
+import carousel, reel, voice
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JST = dt.timezone(dt.timedelta(hours=9))
@@ -17,20 +18,13 @@ def build(spec_path, date=None):
     date = date or dt.datetime.now(JST).strftime('%Y-%m-%d')
     out = os.path.join(ROOT, 'posts', f'{date}_{sp["slug"]}'); os.makedirs(out, exist_ok=True)
     man = {k: sp.get(k) for k in ('type', 'topic', 'hook', 'test')}
+    if sp['type'] == 'reel' and 'HTS Voice' not in sp['caption']:
+        sp['caption'] = sp['caption'].rstrip() + '\n\n' + voice.CREDIT
     man['caption'] = sp['caption']
     if sp['type'] == 'carousel':
-        d = sp['content']; total = len(d['items']) + 3
-        tmp = tempfile.mkdtemp()
-        carousel.cover(d, f'{tmp}/01.png', total)
-        for i, it in enumerate(d['items'], 1):
-            carousel.item(it, i, f'{tmp}/{i+1:02d}.png', i + 1, total)
-        carousel.summary(d, f'{tmp}/{total-1:02d}.png', total - 1, total)
-        carousel.cta(d, f'{tmp}/{total:02d}.png', total, total)
-        files = []
-        for i in range(1, total + 1):
-            f = f'{i:02d}.jpg'
-            Image.open(f'{tmp}/{i:02d}.png').convert('RGB').save(f'{out}/{f}', quality=92)
-            files.append(f)
+        files = carousel.build(sp['content'], out)
+        if len(files) > 10:
+            raise SystemExit(f'カルーセルは10枚まで（今は{len(files)}枚）。story か items を減らしてください')
         man['media'] = files
         ims = [Image.open(f'{out}/{f}').resize((270, 338)) for f in files]
         sheet = Image.new('RGB', (270 * 4, 338 * ((len(ims) + 3) // 4)), (0, 0, 0))

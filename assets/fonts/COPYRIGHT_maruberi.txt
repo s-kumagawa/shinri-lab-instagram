@@ -1,0 +1,17 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: MotoyaLMaruberi
+Source: https://github.com/android/platform_frameworks_base/blob/master/data/fonts/MTLmr3m.ttf
+Upstream-contact: Motoya, Co.LTD,.
+                  Shin-ichiro Fukuda <s-fukuda@motoya.co.jp>
+
+Files: MTLmr3m.ttf
+Copyright: 2010-2012, Motoya, Co.LTD,.
+License: Apache-2
+
+Files: debian/*
+Copyright: 2010-2019, Hideki Yamane <henrich@debian.org>
+License: Apache-2
+
+License: Apache-2
+ On Debian systems the full text of the Apache License Version 2.0 can 
+ be found in the `/usr/share/common-licenses/Apache-2.0' file.

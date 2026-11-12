@@ -2,30 +2,95 @@
  "slug": "peak-end",
  "type": "reel",
  "topic": "日常の心理",
- "hook": "人は「最後」で全部を判断する",
+ "hook": "3日間楽しかったのに「最悪だった」と言う理由",
  "content": {
-  "ref": "Kahneman, Fredrickson, Schreiber & Redelmeier (1993)",
+  "ref": "Kahneman, Fredrickson, Schreiber & Redelmeier (1993) Psychological Science",
+  "thumb": {
+   "title": "楽しい旅行が\n「最悪」になる\n脳のクセ",
+   "accent": "最悪",
+   "who": "mina",
+   "expr": "shock",
+   "icon": "!",
+   "tag": "ピーク・エンドの法則",
+   "bg": "pop"
+  },
   "scenes": [
    {
-    "kind": "hook",
-    "dur": 2.6,
-    "pre": "その思い出、",
-    "main": "「最後」で\n決まってる"
+    "bg": "room",
+    "telop": "3日間楽しかったのに\n「最悪だった」と言う理由",
+    "accent": "最悪だった",
+    "fx": "shake",
+    "cast": [
+     {
+      "who": "mina",
+      "expr": "sad"
+     }
+    ],
+    "icon": {
+     "on": "mina",
+     "kind": "gloom"
+    },
+    "lines": [
+     {
+      "who": "mina",
+      "text": "旅行、最悪だった…",
+      "expr": "sad"
+     }
+    ]
    },
    {
-    "kind": "text",
-    "dur": 3.4,
-    "text": "冷たい水に\n手を入れる実験"
+    "bg": "cafe",
+    "caption": "次の日のカフェ",
+    "cast": [
+     {
+      "who": "sota",
+      "expr": "surprised"
+     },
+     {
+      "who": "mina",
+      "expr": "sad",
+      "flip": true
+     }
+    ],
+    "lines": [
+     {
+      "who": "sota",
+      "text": "え、ずっと楽しそう\nだったじゃん！",
+      "expr": "surprised"
+     },
+     {
+      "who": "mina",
+      "text": "でも最終日に\n財布をなくしたの…",
+      "expr": "sad"
+     }
+    ]
    },
    {
-    "kind": "text",
-    "dur": 4.2,
-    "text": "A：冷たい水に60秒\n\nB：冷たい水に60秒\n＋少しぬるい水に30秒"
+    "kind": "explain",
+    "term": "ピーク・エンドの法則",
+    "text": "記憶は\n「いちばん強い瞬間」と\n「最後」で決まりやすい",
+    "lines": [
+     {
+      "who": "sensei",
+      "text": "それは脳のクセかも\nしれません",
+      "expr": "normal"
+     }
+    ]
    },
    {
-    "kind": "bars",
-    "dur": 5.6,
-    "title": "もう一度やるならどっち？",
+    "kind": "explain",
+    "text": "A：冷たい水に60秒\nB：同じ60秒\n＋少しぬるい水に30秒",
+    "lines": [
+     {
+      "who": "sensei",
+      "text": "冷たい水に手を入れる\n実験があります",
+      "say": "冷たい水に、手を入れる実験があります。"
+     }
+    ]
+   },
+   {
+    "kind": "chart",
+    "title": "もう一度やるなら\nどっち？",
     "rows": [
      {
       "label": "Aを選んだ",
@@ -38,20 +103,61 @@
       "p": 0.69,
       "accent": true
      }
+    ],
+    "lines": [
+     {
+      "who": "sensei",
+      "text": "つらい時間が長いBを\n約7割が選びました",
+      "say": "つらい時間が長い、ビーのほうを、約7割の人が選びました。"
+     }
     ]
    },
    {
-    "kind": "badge",
-    "dur": 3.8,
-    "text": "つらい時間が長いBを\n多くの人が選んだ",
-    "badge": "ピーク・エンドの法則"
+    "bg": "cafe",
+    "cast": [
+     {
+      "who": "mina",
+      "expr": "surprised"
+     }
+    ],
+    "icon": {
+     "on": "mina",
+     "kind": "idea"
+    },
+    "fx": "lines",
+    "lines": [
+     {
+      "who": "mina",
+      "text": "最後が悪いと\n全部が悪く感じるんだ！",
+      "expr": "surprised"
+     }
+    ]
+   },
+   {
+    "kind": "explain",
+    "expr": "happy",
+    "text": "デート・会議・旅行は\n「最後」をいい時間に",
+    "lines": [
+     {
+      "who": "sensei",
+      "text": "大事な場面ほど\n最後を大切に",
+      "expr": "happy"
+     }
+    ]
    },
    {
     "kind": "end",
-    "dur": 3.4,
-    "text": "デートも会議も\n「最後」を良くしよう"
+    "text": "大事な日は\n「最後」で決まる",
+    "accent": "最後",
+    "lines": [
+     {
+      "who": "mina",
+      "text": "保存して\n次の予定の前に見返そう！"
+     }
+    ]
    }
   ]
  },
- "caption": "その思い出、「最後」で決まっています。\n\n冷たい水に手を入れる実験で、\nA：冷たい水に60秒\nB：同じ60秒のあと、少しだけぬるい水に30秒\nを両方体験してもらいました。\n\n「もう一度やるならどっち？」と聞くと、約7割がBを選択。\nつらい時間はBのほうが長いのに、です。\n\n人の記憶は「いちばん強い瞬間（ピーク）」と「最後（エンド）」で決まる。\nこれが【ピーク・エンドの法則】です。\n\nデートの最後、会議の締め、接客の見送り。\n最後を良くするだけで、全体の印象が変わります。\n\n友達に教えたくなったらシェアしてね📩\n\n出典：Kahneman et al. (1993) Psychological Science\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n研究にもとづく心理学を毎日1つ発信中\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #ピークエンドの法則 #行動経済学 #心理学豆知識 #人間関係"
+ "caption": "3日間楽しかったのに「最悪だった」と言ってしまう理由。\n\n冷たい水に手を入れる実験で、\nA：冷たい水に60秒\nB：同じ60秒のあと、少しだけぬるい水に30秒\nを両方体験してもらいました。\n\n「もう一度やるならどっち？」と聞くと、約7割がBを選択。\nつらい時間はBのほうが長いのに、です。\n\n人の記憶は「いちばん強い瞬間（ピーク）」と「最後（エンド）」で決まる。\nこれが【ピーク・エンドの法則】です。\n\nデートの最後、会議の締め、接客の見送り。\n最後を良くするだけで、全体の印象が変わります。\n\n友達に教えたくなったらシェアしてね📩\n\n出典：Kahneman et al. (1993) Psychological Science\n音声：HTS Voice \"Mei\"・\"Takumi\" © Nagoya Institute of Technology (CC BY 3.0)\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n研究にもとづく心理学を毎日1つ発信中\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #ピークエンドの法則 #行動経済学 #心理学豆知識 #人間関係",
+ "test": "story-v1"
 }
