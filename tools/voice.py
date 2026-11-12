@@ -1,7 +1,8 @@
 """ナレーション（音声合成）。config.json の "tts" で切り替える。
   {"provider": "none"}    … 声なし（字幕＋BGM＋効果音）。既定
   {"provider": "google"}  … Google Cloud Text-to-Speech（自然な日本語）。
-     キー（APIキー）は環境のネットワーク設定に保存し、プロキシが texttospeech.googleapis.com への通信に自動で付ける。
+     認証は環境のネットワーク設定（種類「GCP access token (with Service Account Key)」、ホスト texttospeech.googleapis.com）。
+     プロキシがアクセストークンを作って Authorization ヘッダーに自動で付ける。
      任意で "voices": {"narr": "ja-JP-Neural2-B", "me": "ja-JP-Neural2-B", "friend": "ja-JP-Neural2-C"} など
 speak(text, who) -> numpy float 配列（44.1kHz モノラル）。失敗したら例外。"""
 import os, re, io, json, wave, base64, hashlib, tempfile, urllib.request
@@ -45,9 +46,12 @@ def _google(t, who):
     name, pitch, rate = v.get(who, v['narr'])
     body = {'input': {'text': t}, 'voice': {'languageCode': 'ja-JP', 'name': name},
             'audioConfig': {'audioEncoding': 'LINEAR16', 'sampleRateHertz': SR, 'speakingRate': rate, 'pitch': pitch}}
-    key = os.environ.get('GOOGLE_TTS_KEY', 'proxy-injected')  # 実際のキーはプロキシが差し替える
-    req = urllib.request.Request(API, data=json.dumps(body).encode(), method='POST',
-                                 headers={'Content-Type': 'application/json', 'X-Goog-Api-Key': key})
+    # 認証は環境のネットワーク設定（GCP access token / サービスアカウントキー）でプロキシが付ける。
+    # Authorization はダミー値を送り、プロキシが本物のアクセストークンに差し替える。
+    headers = {'Content-Type': 'application/json', 'Authorization': 'Bearer proxy-injected'}
+    if os.environ.get('GOOGLE_TTS_KEY'):  # APIキーを環境変数で渡す場合（予備）
+        headers = {'Content-Type': 'application/json', 'X-Goog-Api-Key': os.environ['GOOGLE_TTS_KEY']}
+    req = urllib.request.Request(API, data=json.dumps(body).encode(), method='POST', headers=headers)
     with urllib.request.urlopen(req, timeout=60) as r:
         data = base64.b64decode(json.load(r)['audioContent'])
     with wave.open(io.BytesIO(data)) as w:
