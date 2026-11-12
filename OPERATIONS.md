@@ -8,7 +8,8 @@
 - `fc-list | grep -q "Noto Sans CJK"` が失敗したら `apt-get install -y fonts-noto-cjk`
 - 吹き出し用の丸ゴシックは `assets/fonts/` に入っている（追加のインストール不要）
 - ナレーションは `config.json` の `tts.provider`（`none`＝声なし／`google`＝Google の音声合成）。
-  `google` のときは `python3 tools/voice.py` で動作確認できる。失敗しても声なしで自動的に作られるので投稿は止めない
+  `google` のときは環境変数 `GOOGLE_TTS_KEY`（Google Cloud の APIキー。Text-to-Speech API だけに制限済み）を使う。
+  `python3 tools/voice.py` で動作確認できる。失敗しても声なしで自動的に作られるので投稿は止めない
   （その日の報告の「オーナーの対応が必要なこと」に、音声合成が失敗したことを書く）
 - 日付は日本時間（JST）で扱う。`TZ=Asia/Tokyo date`
 - `strategy.md` を読む（現在の方針・学び・今週のテスト）

@@ -13,6 +13,6 @@
   "followers": 11
  },
  "tts": {
-  "provider": "none"
+  "provider": "google"
  }
 }

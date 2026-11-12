@@ -1,8 +1,8 @@
 """ナレーション（音声合成）。config.json の "tts" で切り替える。
   {"provider": "none"}    … 声なし（字幕＋BGM＋効果音）。既定
-  {"provider": "google"}  … Google Cloud Text-to-Speech（自然な日本語）。
-     認証は環境のネットワーク設定（種類「GCP access token (with Service Account Key)」、ホスト texttospeech.googleapis.com）。
-     プロキシがアクセストークンを作って Authorization ヘッダーに自動で付ける。
+  {"provider": "google"}  … Google Cloud Text-to-Speech（自然な日本語・Neural2）。
+     認証は作業環境の環境変数 GOOGLE_TTS_KEY（APIキー。Text-to-Speech API だけに制限すること）。
+     環境変数がなければ、ネットワーク設定のアクセストークン（サービスアカウント）をプロキシが付ける前提で送る。
      任意で "voices": {"narr": "ja-JP-Neural2-B", "me": "ja-JP-Neural2-B", "friend": "ja-JP-Neural2-C"} など
 speak(text, who) -> numpy float 配列（44.1kHz モノラル）。失敗したら例外。"""
 import os, re, io, json, wave, base64, hashlib, tempfile, urllib.request
