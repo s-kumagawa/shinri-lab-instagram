@@ -8,8 +8,7 @@
   "thumb": {
    "title": "褒められた10回より\nけなされた1回が\n忘れられない理由",
    "accent": "けなされた1回",
-   "who": "mina",
-   "expr": "sad",
+   "pose": "worried",
    "icon": "gloom",
    "tag": "ネガティビティ・バイアス",
    "bg": "pop"
@@ -21,15 +20,14 @@
     "accent": "けなされた1回",
     "cast": [
      {
-      "who": "mina",
-      "expr": "happy"
+      "who": "me",
+      "pose": "joy"
      }
     ],
     "lines": [
      {
-      "who": "mina",
-      "text": "今日の面談\nたくさん褒められた！",
-      "expr": "happy"
+      "who": "me",
+      "text": "今日の面談\nたくさん褒められた！"
      }
     ]
    },
@@ -38,25 +36,24 @@
     "fx": "shake",
     "cast": [
      {
-      "who": "sota",
-      "expr": "normal"
+      "who": "boss",
+      "pose": "talk"
      },
      {
-      "who": "mina",
-      "expr": "shock",
-      "flip": true
+      "who": "me",
+      "pose": "stand"
      }
     ],
     "lines": [
      {
-      "who": "sota",
+      "who": "boss",
       "text": "ただ資料のミスは\n気をつけてね"
      },
      {
-      "who": "mina",
+      "who": "me",
       "text": "あ…はい…",
       "say": "あ、はい",
-      "expr": "shock"
+      "pose": "shock"
      }
     ]
    },
@@ -65,55 +62,57 @@
     "caption": "その夜",
     "cast": [
      {
-      "who": "mina",
-      "expr": "sad"
+      "who": "me",
+      "pose": "worried"
      }
     ],
     "icon": {
-     "on": "mina",
+     "on": "me",
      "kind": "gloom"
     },
     "lines": [
      {
-      "who": "mina",
+      "who": "me",
       "text": "あのミス…\nずっと頭から離れない",
       "say": "あのミス、ずっと頭から離れない",
-      "expr": "sad",
       "style": "think"
      }
     ]
    },
    {
     "kind": "explain",
+    "icon": "brain",
     "term": "ネガティビティ・バイアス",
     "text": "悪い出来事は\n良い出来事より\n強く心に残りやすい",
+    "accent": "強く心に残りやすい",
     "lines": [
      {
-      "who": "sensei",
-      "text": "それはあなたが弱い\nからではありません"
+      "who": "narr",
+      "text": "それは、あなたが弱いから\nではありません"
      }
     ]
    },
    {
     "kind": "explain",
+    "icon": "warn",
     "text": "危険を見逃さないための\n脳の仕組みと\n考えられています",
+    "accent": "脳の仕組み",
     "lines": [
      {
-      "who": "sensei",
-      "text": "多くの研究で\n確かめられています",
-      "say": "多くの研究で、確かめられています。"
+      "who": "narr",
+      "text": "多くの研究をまとめた論文で\n確かめられています"
      }
     ]
    },
    {
     "kind": "explain",
-    "expr": "happy",
-    "text": "良かったことは\n意識して書き出そう",
+    "icon": "memo",
+    "text": "だから\n良かったことは\n意識して書き出そう",
+    "accent": "書き出そう",
     "lines": [
      {
-      "who": "sensei",
-      "text": "だから、良いことは\n意識して残しましょう",
-      "expr": "happy"
+      "who": "narr",
+      "text": "良いことは、意識して\n残しておきましょう"
      }
     ]
    },
@@ -121,19 +120,18 @@
     "bg": "night",
     "cast": [
      {
-      "who": "mina",
-      "expr": "happy"
+      "who": "me",
+      "pose": "write"
      }
     ],
     "icon": {
-     "on": "mina",
+     "on": "me",
      "kind": "sparkle"
     },
     "lines": [
      {
-      "who": "mina",
-      "text": "褒められたことも\nメモしておこう！",
-      "expr": "happy"
+      "who": "me",
+      "text": "褒められたことも\nメモしておこう！"
      }
     ]
    },
@@ -144,14 +142,13 @@
     "sub": "つらい気持ちが続くときは\n専門家に相談してね",
     "lines": [
      {
-      "who": "sensei",
-      "text": "つらい気持ちが続くときは、専門家に相談してくださいね",
-      "expr": "happy"
+      "who": "narr",
+      "text": "つらい気持ちが続くときは\n専門家に相談してくださいね"
      }
     ]
    }
   ]
  },
  "caption": "褒められた10回より、けなされた1回のほうを覚えていませんか？\n\nそれはあなたが弱いからではありません。\n多くの研究を検討した論文で、悪い出来事は良い出来事よりも強く心に残ることが示されています。\n\nこれが【ネガティビティ・バイアス】。\n危険を見逃さないために備わった、脳の仕組みです。\n\nだからこそ、良かったことは意識して書き出すのがおすすめ。\n今日あった「ちょっと良かったこと」を1つ、コメントに書いてみませんか？💬\n\n出典：Baumeister et al. (2001) Review of General Psychology\n\n※つらい気持ちが続くときは、ひとりで抱えず専門家に相談してください。\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n研究にもとづく心理学を毎日1つ発信中\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #メンタルヘルス #自己肯定感 #ネガティブ思考 #心理学豆知識",
- "test": "story-v1"
+ "test": "story-v2"
 }

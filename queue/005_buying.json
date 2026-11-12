@@ -14,7 +14,8 @@
     "ref": "Tversky & Kahneman (1974) Science",
     "scene": {
      "bg": "shop",
-     "expr": "happy",
+     "pose": "joy",
+     "prop": "bag",
      "line": "定価1万円が5千円！\nお得すぎる！"
     }
    },
@@ -27,8 +28,9 @@
     "ref": "Huber, Payne & Puto (1982) J. Consumer Research",
     "scene": {
      "bg": "cafe",
-     "expr": "think",
-     "line": "SとLの差は30円…\nならLにしよう"
+     "pose": "think",
+     "line": "SとLの差は30円…\nならLにしよう",
+     "style": "think"
     }
    },
    {
@@ -40,7 +42,8 @@
     "ref": "Tversky & Kahneman (1992) J. Risk and Uncertainty",
     "scene": {
      "bg": "room",
-     "expr": "worried",
+     "pose": "worried",
+     "prop": "phone",
      "line": "ポイント失効は\nもったいない…！"
     }
    },
@@ -53,8 +56,9 @@
     "ref": "Worchel, Lee & Adewole (1975) J. Pers. & Soc. Psych.",
     "scene": {
      "bg": "shop",
-     "expr": "surprised",
-     "line": "残り2点！？\n今買わないと！"
+     "pose": "surprised",
+     "line": "残り2点！？\n今買わないと！",
+     "style": "shout"
     }
    },
    {
@@ -66,7 +70,7 @@
     "ref": "Johnson & Goldstein (2003) Science",
     "scene": {
      "bg": "night",
-     "expr": "shock",
+     "pose": "phone",
      "line": "使ってないサブスク\nまだ払ってた…"
     }
    }
@@ -76,8 +80,8 @@
   "thumb": {
    "title": "その買い物\n脳に\nだまされてるかも",
    "accent": "だまされてる",
-   "who": "mina",
-   "expr": "shock",
+   "pose": "shock",
+   "prop": "bag",
    "icon": "!",
    "tag": "つい買ってしまう心理 5選",
    "bg": "pop2"
@@ -85,30 +89,32 @@
   "story": [
    {
     "bg": "shop",
-    "caption": "給料日のミナ",
+    "caption": "給料日",
     "fx": "lines",
     "cast": [
      {
-      "who": "mina",
-      "expr": "happy"
+      "who": "me",
+      "pose": "joy",
+      "prop": "bag"
      }
     ],
     "icon": {
-     "on": "mina",
+     "on": "me",
      "kind": "heart"
     },
     "lines": [
      {
-      "who": "mina",
+      "who": "me",
       "text": "定価1万円が今だけ半額！\n残りわずか…買わなきゃ！",
       "style": "shout"
      }
     ]
    }
   ],
-  "bridge": "その「買わなきゃ！」\n5つの心理が\nはたらいているかも",
-  "bridge_term": "つい買ってしまう心理"
+  "bridge": "その「買わなきゃ！」には\n5つの心理が\nはたらいているかも",
+  "bridge_term": "つい買ってしまう心理",
+  "bridge_icon": "brain"
  },
  "caption": "その買い物、脳にだまされているかもしれません🧠\n\n「つい買ってしまう心理」5選\n\n1. アンカリング\n2. おとり効果\n3. 損失回避\n4. 希少性\n5. デフォルト効果\n\nセールの前に見返せるよう【保存】しておいてね📌\n\nいちばん引っかかったことがあるのは何番？コメントで教えてください💬\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n研究にもとづく心理学を毎日1つ発信中\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #行動経済学 #節約 #お金の勉強 #心理学豆知識",
- "test": "story-v1"
+ "test": "story-v2"
 }

@@ -1,28 +1,34 @@
-"""ナレーション・セリフの音声合成（Open JTalk + HTS Voice "Mei" / "Takumi"）。
-  必要: apt-get install -y open-jtalk open-jtalk-mecab-naist-jdic
-  音声: assets/voices/*.htsvoice  © Nagoya Institute of Technology (CC BY 3.0) → キャプションにクレジットを入れる
-speak(text, who, expr) -> numpy float 配列（44.1kHz モノラル）"""
-import os, re, subprocess, tempfile, wave, hashlib, shutil
+"""ナレーション（音声合成）。config.json の "tts" で切り替える。
+  {"provider": "none"}    … 声なし（字幕＋BGM＋効果音）。既定
+  {"provider": "google"}  … Google Cloud Text-to-Speech（自然な日本語）。
+     キー（APIキー）は環境のネットワーク設定に保存し、プロキシが texttospeech.googleapis.com への通信に自動で付ける。
+     任意で "voices": {"narr": "ja-JP-Neural2-B", "me": "ja-JP-Neural2-B", "friend": "ja-JP-Neural2-C"} など
+speak(text, who) -> numpy float 配列（44.1kHz モノラル）。失敗したら例外。"""
+import os, re, io, json, wave, base64, hashlib, tempfile, urllib.request
 import numpy as np
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-VDIR = os.path.join(ROOT, 'assets', 'voices')
-DIC = '/var/lib/mecab/dic/open-jtalk/naist-jdic'
 SR = 44100
-CREDIT = '音声：HTS Voice "Mei"・"Takumi" © Nagoya Institute of Technology（CC BY 3.0）'
-
-# 話者ごとの声: (声ファイル, 音の高さの調整[半音], 話す速さ)
-VOICE = {
-    'mina':   ('mei_normal', 0.0, 1.15),
-    'sota':   ('takumi_normal', 1.5, 1.15),
-    'sensei': ('takumi_normal', -1.0, 1.1),
-    'narr':   ('takumi_normal', -1.0, 1.1),
+API = 'https://texttospeech.googleapis.com/v1/text:synthesize'
+DEFAULT_VOICES = {  # (声の名前, 高さ, 速さ)
+    'narr':   ('ja-JP-Neural2-B', 0.0, 1.12),
+    'me':     ('ja-JP-Neural2-B', 1.5, 1.12),
+    'friend': ('ja-JP-Neural2-C', 0.0, 1.12),
+    'boss':   ('ja-JP-Neural2-D', -1.0, 1.08),
 }
-EXPR_VOICE = {('mina', 'happy'): 'mei_happy', ('mina', 'smug'): 'mei_happy',
-              ('mina', 'sad'): 'mei_sad', ('mina', 'worried'): 'mei_sad'}
 
-def available():
-    return shutil.which('open_jtalk') is not None and os.path.isdir(DIC)
+def config():
+    try:
+        return json.load(open(os.path.join(ROOT, 'config.json'), encoding='utf-8')).get('tts', {})
+    except Exception:
+        return {}
+
+def provider():
+    return config().get('provider', 'none')
+
+def credit():
+    """キャプションに入れる音声のクレジット（Google は不要）"""
+    return ''
 
 def clean(text):
     """画面用の文字を読み上げ用に整える（記号を除き、改行は読点に）"""
@@ -32,32 +38,36 @@ def clean(text):
     t = re.sub(r'、+', '、', t).strip('、 ')
     return t
 
-def speak(text, who='narr', expr='normal', speed=None, cache_dir=None):
-    vname, fm, r = VOICE.get(who, VOICE['narr'])
-    vname = EXPR_VOICE.get((who, expr), vname)
-    r = speed or r
+def _google(t, who):
+    v = dict(DEFAULT_VOICES)
+    for k, n in config().get('voices', {}).items():
+        b = v.get(k, v['narr']); v[k] = (n, b[1], b[2]) if isinstance(n, str) else tuple(n)
+    name, pitch, rate = v.get(who, v['narr'])
+    body = {'input': {'text': t}, 'voice': {'languageCode': 'ja-JP', 'name': name},
+            'audioConfig': {'audioEncoding': 'LINEAR16', 'sampleRateHertz': SR, 'speakingRate': rate, 'pitch': pitch}}
+    key = os.environ.get('GOOGLE_TTS_KEY', 'proxy-injected')  # 実際のキーはプロキシが差し替える
+    req = urllib.request.Request(API, data=json.dumps(body).encode(), method='POST',
+                                 headers={'Content-Type': 'application/json', 'X-Goog-Api-Key': key})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        data = base64.b64decode(json.load(r)['audioContent'])
+    with wave.open(io.BytesIO(data)) as w:
+        return np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
+
+def speak(text, who='narr', cache_dir=None):
+    who = {'mina': 'me', 'sota': 'friend', 'sensei': 'narr'}.get(who, who)
     t = clean(text)
-    key = hashlib.md5(f'{t}|{vname}|{fm}|{r}'.encode()).hexdigest()[:16]
     cache_dir = cache_dir or os.path.join(tempfile.gettempdir(), 'shinri_tts')
     os.makedirs(cache_dir, exist_ok=True)
-    out = os.path.join(cache_dir, key + '.wav')
-    if not os.path.exists(out):
-        subprocess.run(['open_jtalk', '-x', DIC, '-m', os.path.join(VDIR, vname + '.htsvoice'),
-                        '-r', str(r), '-fm', str(fm), '-ow', out], input=t.encode('utf-8'), check=True)
-    with wave.open(out) as w:
-        sr = w.getframerate(); x = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
-    if sr != SR:
-        n = int(len(x) * SR / sr)
-        x = np.interp(np.linspace(0, len(x) - 1, n), np.arange(len(x)), x)
-    # 前後の無音を詰める
+    f = os.path.join(cache_dir, hashlib.md5(f'{provider()}|{who}|{t}'.encode()).hexdigest()[:16] + '.npy')
+    if os.path.exists(f): return np.load(f)
+    x = _google(t, who)
     idx = np.where(np.abs(x) > 0.01)[0]
-    if len(idx): x = x[max(0, idx[0] - 400): idx[-1] + 2000]
-    return x / (np.abs(x).max() + 1e-9) * 0.9
+    if len(idx): x = x[max(0, idx[0] - 400): idx[-1] + 2500]
+    x = x / (np.abs(x).max() + 1e-9) * 0.9
+    np.save(f, x)
+    return x
 
-def envelope(x, fps=30):
-    """口パク用：フレームごとの音量（0〜3の4段階）"""
-    hop = SR // fps
-    n = len(x) // hop + 1
-    v = np.array([np.sqrt(np.mean(x[i * hop:(i + 1) * hop] ** 2)) if i * hop < len(x) else 0 for i in range(n)])
-    v = v / (v.max() + 1e-9)
-    return np.digitize(v, [0.15, 0.4, 0.7])
+if __name__ == '__main__':  # 動作確認: python3 tools/voice.py "こんにちは"
+    import sys
+    x = _google(clean(sys.argv[1] if len(sys.argv) > 1 else 'こんにちは。しんりラボです。'), 'narr')
+    print('ok', round(len(x) / SR, 2), 'sec')

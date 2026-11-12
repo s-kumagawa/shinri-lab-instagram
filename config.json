@@ -11,5 +11,8 @@
  "baseline": {
   "date": "2026-11-08",
   "followers": 11
+ },
+ "tts": {
+  "provider": "none"
  }
 }

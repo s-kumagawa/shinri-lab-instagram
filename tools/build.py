@@ -4,7 +4,7 @@
 仕様の形式:
  {"slug":"peak-end","type":"carousel|reel","topic":"テーマ","hook":"冒頭の一言","test":"A/Bテストのラベル(任意)",
   "content":{...carousel.py または reel.py 冒頭の説明の形式...},"caption":"キャプション全文"}
-リールはナレーションつき（tools/voice.py）。キャプションに voice.CREDIT（音声のクレジット）が無ければ自動で足す。"""
+リールの声は config.json の tts で切り替える（tools/voice.py）。"""
 import json, os, sys, datetime as dt, tempfile
 from PIL import Image
 sys.path.insert(0, os.path.dirname(__file__))
@@ -18,8 +18,8 @@ def build(spec_path, date=None):
     date = date or dt.datetime.now(JST).strftime('%Y-%m-%d')
     out = os.path.join(ROOT, 'posts', f'{date}_{sp["slug"]}'); os.makedirs(out, exist_ok=True)
     man = {k: sp.get(k) for k in ('type', 'topic', 'hook', 'test')}
-    if sp['type'] == 'reel' and 'HTS Voice' not in sp['caption']:
-        sp['caption'] = sp['caption'].rstrip() + '\n\n' + voice.CREDIT
+    if sp['type'] == 'reel' and voice.credit() and voice.credit() not in sp['caption']:
+        sp['caption'] = sp['caption'].rstrip() + '\n\n' + voice.credit()
     man['caption'] = sp['caption']
     if sp['type'] == 'carousel':
         files = carousel.build(sp['content'], out)

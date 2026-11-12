@@ -4,41 +4,152 @@
  "topic": "人間関係",
  "hook": "たった4秒の沈黙で、人は不安になる",
  "content": {
-  "ref": "Koudenburg, Postmes & Gordijn (2011)",
+  "ref": "Koudenburg, Postmes & Gordijn (2011) J. Experimental Social Psychology",
+  "thumb": {
+   "title": "会話の沈黙\nたった4秒で\n不安になる",
+   "accent": "4秒",
+   "pose": "worried",
+   "icon": "...",
+   "tag": "会話の心理学",
+   "bg": "pop"
+  },
   "scenes": [
    {
-    "kind": "hook",
-    "dur": 2.6,
-    "pre": "会話の沈黙が怖い人へ",
-    "main": "たった4秒で\n人は不安になる"
+    "bg": "cafe",
+    "telop": "会話が止まって\n気まずくなるのは何秒？",
+    "accent": "何秒？",
+    "cast": [
+     {
+      "who": "me",
+      "pose": "talk"
+     },
+     {
+      "who": "friend",
+      "pose": "stand"
+     }
+    ],
+    "lines": [
+     {
+      "who": "me",
+      "text": "それでね、\nこの前…"
+     },
+     {
+      "who": "friend",
+      "text": "うん…"
+     }
+    ]
    },
    {
-    "kind": "text",
-    "dur": 3.6,
-    "text": "会話の途中に\n4秒だけ沈黙が入る\n場面を体験してもらう\n実験"
+    "bg": "cafe",
+    "caption": "シーン…",
+    "cast": [
+     {
+      "who": "me",
+      "pose": "worried"
+     },
+     {
+      "who": "friend",
+      "pose": "think"
+     }
+    ],
+    "icon": {
+     "on": "me",
+     "kind": "..."
+    },
+    "lines": [
+     {
+      "who": "me",
+      "text": "何か話さなきゃ…",
+      "style": "think"
+     }
+    ]
    },
    {
-    "kind": "text",
-    "dur": 4.0,
-    "text": "それだけで\n「受け入れられていない」\nと感じやすくなった"
+    "kind": "explain",
+    "icon": "clock",
+    "text": "会話の途中に\nたった4秒の沈黙",
+    "accent": "4秒",
+    "size": 96,
+    "lines": [
+     {
+      "who": "narr",
+      "text": "4秒の沈黙が入る会話を\n体験してもらう実験があります"
+     }
+    ]
    },
    {
-    "kind": "badge",
-    "dur": 3.8,
+    "kind": "explain",
+    "icon": "people",
+    "text": "それだけで\n「受け入れられていない」\nと感じやすくなった",
+    "accent": "受け入れられていない",
+    "lines": [
+     {
+      "who": "narr",
+      "text": "たった4秒で\n不安が生まれるんです"
+     }
+    ]
+   },
+   {
+    "kind": "explain",
+    "icon": "check",
     "text": "沈黙が気まずいのは\n性格ではなく\n人間の自然な反応",
-    "badge": "4秒の沈黙"
+    "accent": "自然な反応",
+    "lines": [
+     {
+      "who": "narr",
+      "text": "あなたの性格の\nせいではありません"
+     }
+    ]
    },
    {
-    "kind": "text",
-    "dur": 3.6,
-    "text": "つまり相手も\n同じくらい気まずい\n先に一言でOK"
+    "kind": "explain",
+    "icon": "chat",
+    "text": "相手も同じくらい\n気まずい\nだから先に一言でOK",
+    "accent": "先に一言",
+    "lines": [
+     {
+      "who": "narr",
+      "text": "相手も同じように\n感じています"
+     }
+    ]
+   },
+   {
+    "bg": "cafe",
+    "cast": [
+     {
+      "who": "me",
+      "pose": "talk"
+     },
+     {
+      "who": "friend",
+      "pose": "stand"
+     }
+    ],
+    "lines": [
+     {
+      "who": "me",
+      "text": "そういえば\nこの前の映画！"
+     },
+     {
+      "who": "friend",
+      "text": "あれ面白かった\nよね！",
+      "pose": "joy"
+     }
+    ]
    },
    {
     "kind": "end",
-    "dur": 3.4,
-    "text": "会話が苦手な友達に\nシェアしてね"
+    "text": "会話が苦手な友達に\nシェアしてね",
+    "accent": "シェア",
+    "lines": [
+     {
+      "who": "narr",
+      "text": "会話が苦手な友達に\nシェアしてね"
+     }
+    ]
    }
   ]
  },
- "caption": "たった4秒の沈黙で、人は不安になります。\n\n会話の途中に4秒だけ沈黙が入る場面を体験してもらった実験では、それだけで「自分は受け入れられていない」と感じやすくなりました。\n\n沈黙が気まずいのは、あなたの性格のせいではなく、人間の自然な反応。\nそして相手も、同じくらい気まずく感じています。\n「そういえば」の一言を、先に言ってしまってOKです。\n\n会話が苦手な友達にシェアしてね📩\n\n出典：Koudenburg, Postmes & Gordijn (2011) Journal of Experimental Social Psychology\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n研究にもとづく心理学を毎日1つ発信中\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #会話術 #人間関係 #沈黙 #心理学豆知識"
+ "caption": "たった4秒の沈黙で、人は不安になります。\n\n会話の途中に4秒だけ沈黙が入る場面を体験してもらった実験では、それだけで「自分は受け入れられていない」と感じやすくなりました。\n\n沈黙が気まずいのは、あなたの性格のせいではなく、人間の自然な反応。\nそして相手も、同じくらい気まずく感じています。\n「そういえば」の一言を、先に言ってしまってOKです。\n\n会話が苦手な友達にシェアしてね📩\n\n出典：Koudenburg, Postmes & Gordijn (2011) Journal of Experimental Social Psychology\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n研究にもとづく心理学を毎日1つ発信中\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #会話術 #人間関係 #沈黙 #心理学豆知識",
+ "test": "story-v2"
 }

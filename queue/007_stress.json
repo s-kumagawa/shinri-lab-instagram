@@ -14,8 +14,9 @@
     "ref": "Pennebaker & Beall (1986) J. Abnormal Psychology",
     "scene": {
      "bg": "night",
-     "expr": "think",
-     "line": "誰にも見せないノートに\n書いてみようかな"
+     "pose": "write",
+     "line": "誰にも見せないノートに\n書いてみようかな",
+     "style": "think"
     }
    },
    {
@@ -27,8 +28,9 @@
     "ref": "Gross & John (2003) J. Pers. & Soc. Psych.",
     "scene": {
      "bg": "office",
-     "expr": "normal",
-     "line": "失敗したけど\n学べたこともあるか"
+     "pose": "think",
+     "line": "失敗したけど\n学べたこともあるか",
+     "style": "think"
     }
    },
    {
@@ -39,8 +41,8 @@
     "use": "散歩するなら\n公園や川沿いのルートを選ぶ。",
     "ref": "Bratman et al. (2015) PNAS",
     "scene": {
-     "bg": "street",
-     "expr": "happy",
+     "bg": "park",
+     "pose": "walk",
      "line": "公園を通って\n帰ってみよう"
     }
    },
@@ -53,8 +55,9 @@
     "ref": "Lieberman et al. (2007) Psychological Science",
     "scene": {
      "bg": "room",
-     "expr": "worried",
-     "line": "今、わたし\n不安なんだな…"
+     "pose": "worried",
+     "line": "今、わたし\n不安なんだな…",
+     "style": "think"
     }
    },
    {
@@ -65,8 +68,8 @@
     "use": "まずは軽い散歩から。\n激しい運動でなくて大丈夫。",
     "ref": "Noetel et al. (2024) BMJ",
     "scene": {
-     "bg": "street",
-     "expr": "happy",
+     "bg": "park",
+     "pose": "run",
      "line": "10分だけ\n散歩してみよう！"
     }
    }
@@ -76,8 +79,7 @@
   "thumb": {
    "title": "寝ても\n疲れが抜けない\nあなたへ",
    "accent": "疲れが抜けない",
-   "who": "mina",
-   "expr": "worried",
+   "pose": "sad",
    "icon": "gloom",
    "tag": "ストレスを軽くする心理学 5選",
    "bg": "pop"
@@ -85,29 +87,30 @@
   "story": [
    {
     "bg": "night",
-    "caption": "金曜の夜のミナ",
+    "caption": "金曜の夜",
     "cast": [
      {
-      "who": "mina",
-      "expr": "sad"
+      "who": "me",
+      "pose": "sad"
      }
     ],
     "icon": {
-     "on": "mina",
+     "on": "me",
      "kind": "gloom"
     },
     "lines": [
      {
-      "who": "mina",
+      "who": "me",
       "text": "今週もずっとモヤモヤ…\n休んでも回復しない",
       "style": "think"
      }
     ]
    }
   ],
-  "bridge": "研究で確かめられた\n5つの方法を\n紹介しますね",
-  "bridge_term": "ストレスを軽くする方法"
+  "bridge": "研究で確かめられた\n5つの方法を紹介します",
+  "bridge_term": "ストレスを軽くする方法",
+  "bridge_icon": "heart"
  },
  "caption": "疲れが抜けない、なんとなくずっとモヤモヤする…そんな人へ。\n研究で効果が確かめられた「ストレスを軽くする方法」5選🧠\n\n1. 気持ちを書き出す\n2. 捉え直し\n3. 自然の中を歩く\n4. 感情に名前をつける\n5. 体を動かす\n\nどれも今日からお金をかけずにできます。\nしんどい日に見返せるよう【保存】しておいてね📌\n\nあなたのストレス解消法もコメントで教えてください💬\n\n※つらい状態が続くときは、専門家への相談もためらわないでください。\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n研究にもとづく心理学を毎日1つ発信中\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #ストレス解消 #メンタルヘルス #セルフケア #心理学豆知識",
- "test": "story-v1"
+ "test": "story-v2"
 }
