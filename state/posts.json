@@ -62,6 +62,25 @@
   "slug": "2026-11-12_peak-end",
   "topic": "日常の心理",
   "hook": "人は「最後」で全部を判断する",
+  "test": null,
+  "d1": {
+   "measured_at": "2026-11-13",
+   "reach": 100,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "views": 114,
+   "avg_watch_ms": 4852
+  }
+ },
+ {
+  "media_id": "18114392516334193",
+  "permalink": "https://www.instagram.com/reel/DfrczL_DKCu/",
+  "timestamp": "2026-11-13T10:47:21+0000",
+  "type": "reel",
+  "slug": "2026-11-13_negativity",
+  "topic": "メンタル",
+  "hook": "褒められた10回より、けなされた1回",
   "test": null
  }
 ]
