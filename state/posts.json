@@ -81,6 +81,25 @@
   "slug": "2026-11-13_negativity",
   "topic": "メンタル",
   "hook": "褒められた10回より、けなされた1回",
+  "test": null,
+  "d1": {
+   "measured_at": "2026-11-14",
+   "reach": 137,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "views": 147,
+   "avg_watch_ms": 3253
+  }
+ },
+ {
+  "media_id": "18220123663355911",
+  "permalink": "https://www.instagram.com/reel/DfuBbNRkrFG/",
+  "timestamp": "2026-11-14T10:46:12+0000",
+  "type": "reel",
+  "slug": "2026-11-14_silence",
+  "topic": "人間関係",
+  "hook": "たった4秒の沈黙で、人は不安になる",
   "test": null
  }
 ]
