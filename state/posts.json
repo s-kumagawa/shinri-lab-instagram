@@ -100,6 +100,25 @@
   "slug": "2026-11-14_silence",
   "topic": "人間関係",
   "hook": "たった4秒の沈黙で、人は不安になる",
+  "test": null,
+  "d1": {
+   "measured_at": "2026-11-15",
+   "reach": 104,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "views": 116,
+   "avg_watch_ms": 4275
+  }
+ },
+ {
+  "media_id": "18077311364771649",
+  "permalink": "https://www.instagram.com/reel/DfwmSa_HDNZ/",
+  "timestamp": "2026-11-15T10:46:26+0000",
+  "type": "reel",
+  "slug": "2026-11-15_prosocial",
+  "topic": "お金・消費",
+  "hook": "お金で幸せは買える。使い道しだいで",
   "test": null
  }
 ]
