@@ -1,10 +1,10 @@
 {
- "taken_at": "2026-11-16T19:43:45.387288+09:00",
+ "taken_at": "2026-11-16T19:47:09.137731+09:00",
  "account": {
   "id": "17841473061253620",
   "followers_count": 10,
   "follows_count": 0,
-  "media_count": 7,
+  "media_count": 8,
   "username": "shinri.lab.jp",
   "day": {
    "reach": 1,
@@ -15,6 +15,27 @@
   }
  },
  "media": [
+  {
+   "id": "18099121871133263",
+   "caption": "「2・4・6」この数字のルール、あなたは気づけますか？\n\n心理学者ウェイソンの実験では、参加者が自分で数字の並びを試して",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DfzLGlfj3S4/",
+   "timestamp": "2026-11-16T10:46:44+0000",
+   "insights": {
+    "reach": 0,
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 0,
+    "ig_reels_video_view_total_time": 0
+   }
+  },
   {
    "id": "18077311364771649",
    "caption": "お金で幸せは買えます。ただし、使い道しだいで。\n\nある実験では、朝、参加者に5ドルか20ドルを渡し、その日のうちに\nA：",

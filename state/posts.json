@@ -119,6 +119,25 @@
   "slug": "2026-11-15_prosocial",
   "topic": "お金・消費",
   "hook": "お金で幸せは買える。使い道しだいで",
-  "test": null
+  "test": null,
+  "d1": {
+   "measured_at": "2026-11-16",
+   "reach": 19,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "views": 21,
+   "avg_watch_ms": 2247
+  }
+ },
+ {
+  "media_id": "18099121871133263",
+  "permalink": "https://www.instagram.com/reel/DfzLGlfj3S4/",
+  "timestamp": "2026-11-16T10:46:44+0000",
+  "type": "reel",
+  "slug": "2026-11-16_confirmation",
+  "topic": "思考のクセ",
+  "hook": "この数字のルール、あなたは気づける？",
+  "test": "hook:question"
  }
 ]
