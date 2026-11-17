@@ -1,10 +1,10 @@
 {
- "taken_at": "2026-11-17T19:44:01.878531+09:00",
+ "taken_at": "2026-11-17T19:46:05.228264+09:00",
  "account": {
   "id": "17841473061253620",
   "followers_count": 10,
   "follows_count": 0,
-  "media_count": 8,
+  "media_count": 9,
   "username": "shinri.lab.jp",
   "day": {
    "reach": 1,
@@ -15,6 +15,27 @@
   }
  },
  "media": [
+  {
+   "id": "18093751439228197",
+   "caption": "第一印象って、何秒で決まると思いますか？\n\n答えは、たった0.1秒。\n\n顔写真を0.1秒だけ見せて印象を答えてもらう実験",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/Df1vzD3Abli/",
+   "timestamp": "2026-11-17T10:45:50+0000",
+   "insights": {
+    "reach": 0,
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 0,
+    "ig_reels_video_view_total_time": 0
+   }
+  },
   {
    "id": "18099121871133263",
    "caption": "「2・4・6」この数字のルール、あなたは気づけますか？\n\n心理学者ウェイソンの実験では、参加者が自分で数字の並びを試して",

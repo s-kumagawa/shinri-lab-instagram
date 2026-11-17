@@ -138,6 +138,25 @@
   "slug": "2026-11-16_confirmation",
   "topic": "思考のクセ",
   "hook": "この数字のルール、あなたは気づける？",
+  "test": "hook:question",
+  "d1": {
+   "measured_at": "2026-11-17",
+   "reach": 19,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "views": 20,
+   "avg_watch_ms": 2380
+  }
+ },
+ {
+  "media_id": "18093751439228197",
+  "permalink": "https://www.instagram.com/reel/Df1vzD3Abli/",
+  "timestamp": "2026-11-17T10:45:50+0000",
+  "type": "reel",
+  "slug": "2026-11-17_first-impression",
+  "topic": "人間関係",
+  "hook": "第一印象って何秒で決まると思う？",
   "test": "hook:question"
  }
 ]
