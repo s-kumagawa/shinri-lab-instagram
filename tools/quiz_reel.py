@@ -15,7 +15,7 @@ import numpy as np
 from PIL import Image, ImageDraw
 sys.path.insert(0, os.path.dirname(__file__))
 from design import font, HANDLE
-from music import make_bgm
+from music import make_pop_bgm
 
 W, H, FPS = 1080, 1920, 30
 YEL = (255, 214, 64)
@@ -298,15 +298,15 @@ def quiz_reel(c, out, tmp):
     for i in range(n):
         frame(i / FPS).save(f'{tmp}/{i:04d}.png')
     # 音：BGM（小さめ）＋効果音
-    bgm = f'{tmp}/bgm.wav'; make_bgm(DUR, bgm, seed=zlib.crc32(out.encode()))
-    b = read_wav(bgm) * 0.45
+    bgm = f'{tmp}/bgm.wav'; make_pop_bgm(DUR, bgm, seed=zlib.crc32(out.encode()), drop=(T_DRUM, T_REV))
+    b = read_wav(bgm) * 0.6
     ev = [('pop', 0.0), ('pop', T_Q)] + [('swish', T_CH + i * 0.22) for i in range(nC)] + \
          [('tick', T_CD + i) for i in range(3)] + [('drum', T_DRUM), ('chime', T_REV), ('pop', T_END)]
     s = sfx_track(ev, DUR); m = min(len(b), len(s)); mix = b[:m] + s[:m]
     wav = f'{tmp}/mix.wav'; write_wav(wav, mix / max(1.0, np.abs(mix).max() / 0.95))
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-framerate', str(FPS), '-i', f'{tmp}/%04d.png', '-i', wav, '-shortest',
                     '-c:v', 'libx264', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-crf', '20',
-                    '-movflags', '+faststart', '-c:a', 'aac', '-b:a', '160k', out], check=True)
+                    '-movflags', '+faststart', '-af', 'loudnorm=I=-15:TP=-1.5:LRA=11', '-ar', '44100', '-c:a', 'aac', '-b:a', '160k', out], check=True)
     frame(T_CH + 1.0).save(out.replace('.mp4', '_cover.jpg'), quality=92)
     picks = [0.5, T_CH + 0.9, T_CD + 0.5, T_DRUM + 0.3, T_REV + 0.6, T_EXP + 1.5, T_END + 0.8]
     sheet = Image.new('RGB', (len(picks) * 270, 480))
