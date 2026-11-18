@@ -37,6 +37,7 @@ T_REV = 6.8      # 正解発表
 T_EXP = 7.6      # 根拠
 T_END = 12.4     # エンドカード
 DUR = 14.0
+SFX_GAIN = 0.45  # BGMに対する効果音の大きさ（約 -7dB）
 
 
 def ease(t):
@@ -302,7 +303,7 @@ def quiz_reel(c, out, tmp):
     b = read_wav(bgm) * 0.6
     ev = [('pop', 0.0), ('pop', T_Q)] + [('swish', T_CH + i * 0.22) for i in range(nC)] + \
          [('tick', T_CD + i) for i in range(3)] + [('drum', T_DRUM), ('chime', T_REV), ('pop', T_END)]
-    s = sfx_track(ev, DUR); m = min(len(b), len(s)); mix = b[:m] + s[:m]
+    s = sfx_track(ev, DUR); m = min(len(b), len(s)); mix = b[:m] + SFX_GAIN * s[:m]
     wav = f'{tmp}/mix.wav'; write_wav(wav, mix / max(1.0, np.abs(mix).max() / 0.95))
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-framerate', str(FPS), '-i', f'{tmp}/%04d.png', '-i', wav, '-shortest',
                     '-c:v', 'libx264', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-crf', '20',
