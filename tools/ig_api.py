@@ -97,7 +97,9 @@ def publish(post_dir, base_url):
     info = call('GET', pub['id'], fields='id,permalink,timestamp,media_type,media_product_type')
     rec = {'media_id': info['id'], 'permalink': info.get('permalink'), 'timestamp': info.get('timestamp'),
            'type': m['type'], 'slug': os.path.basename(post_dir.rstrip('/')),
-           'topic': m.get('topic'), 'hook': m.get('hook'), 'test': m.get('test')}
+           'topic': m.get('topic'), 'hook': m.get('hook'), 'test': m.get('test'),
+           'series': m.get('series'), 'format': m.get('format'), 'vars': m.get('vars'),
+           'hypothesis': m.get('hypothesis'), 'duration': m.get('duration')}
     log = os.path.join(ROOT, 'state', 'posts.json')
     posts = json.load(open(log, encoding='utf-8')) if os.path.exists(log) else []
     posts.append(rec)

@@ -9,12 +9,46 @@
   "hook": "会話が苦手な人ほど知ってほしい",
   "test": null,
   "d1": {
-   "measured_at": "2026-11-10",
+   "auto": true,
+   "age_h": 37,
+   "measured_at": "2026-11-10T19:43",
    "reach": 0,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
    "saved": 0,
    "shares": 0,
    "follows": 0,
-   "views": 0
+   "profile_visits": 0,
+   "ig_reels_avg_watch_time": null
+  },
+  "d3": {
+   "auto": true,
+   "age_h": 85,
+   "measured_at": "2026-11-12T19:47",
+   "reach": 0,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "ig_reels_avg_watch_time": null
+  },
+  "d7": {
+   "auto": true,
+   "age_h": 181,
+   "measured_at": "2026-11-16T19:47",
+   "reach": 0,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "ig_reels_avg_watch_time": null
   }
  },
  {
@@ -27,14 +61,54 @@
   "hook": "あなたの失敗、実は誰も覚えていない",
   "test": null,
   "d1": {
-   "measured_at": "2026-11-11",
+   "auto": true,
+   "age_h": 24,
+   "measured_at": "2026-11-11T19:45",
    "reach": 25,
+   "views": 25,
+   "likes": 0,
+   "comments": 0,
    "saved": 0,
    "shares": 0,
    "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 4900
+  },
+  "vars": {
+   "format": "legacy",
+   "hook_type": "statement"
+  },
+  "hypothesis": "E002",
+  "duration": 19.0,
+  "d3": {
+   "auto": true,
+   "age_h": 72,
+   "measured_at": "2026-11-13T19:47",
+   "reach": 25,
    "views": 25,
-   "avg_watch_ms": 4900
-  }
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 4900
+  },
+  "d7": {
+   "auto": true,
+   "age_h": 168,
+   "measured_at": "2026-11-17T19:46",
+   "reach": 25,
+   "views": 25,
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 4900
+  },
+  "follower_delta_d1": 0
  },
  {
   "media_id": "18101732564093082",
@@ -46,13 +120,48 @@
   "hook": "つい後回しにしてしまうあなたへ",
   "test": null,
   "d1": {
-   "measured_at": "2026-11-12",
+   "auto": true,
+   "age_h": 24,
+   "measured_at": "2026-11-12T19:47",
    "reach": 0,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
    "saved": 0,
    "shares": 0,
    "follows": 0,
-   "views": 0
-  }
+   "profile_visits": 0,
+   "ig_reels_avg_watch_time": null
+  },
+  "d3": {
+   "auto": true,
+   "age_h": 72,
+   "measured_at": "2026-11-14T19:46",
+   "reach": 0,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "ig_reels_avg_watch_time": null
+  },
+  "d7": {
+   "auto": true,
+   "age_h": 168,
+   "measured_at": "2026-11-18T19:46",
+   "reach": 0,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "ig_reels_avg_watch_time": null
+  },
+  "follower_delta_d1": 0
  },
  {
   "media_id": "18083569757348257",
@@ -64,14 +173,40 @@
   "hook": "人は「最後」で全部を判断する",
   "test": null,
   "d1": {
-   "measured_at": "2026-11-13",
+   "auto": true,
+   "age_h": 24,
+   "measured_at": "2026-11-13T19:47",
    "reach": 100,
+   "views": 114,
+   "likes": 0,
+   "comments": 0,
    "saved": 0,
    "shares": 0,
    "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 4852
+  },
+  "vars": {
+   "format": "legacy",
+   "hook_type": "statement"
+  },
+  "hypothesis": "E002",
+  "duration": 22.999999999999996,
+  "d3": {
+   "auto": true,
+   "age_h": 72,
+   "measured_at": "2026-11-15T19:46",
+   "reach": 100,
    "views": 114,
-   "avg_watch_ms": 4852
-  }
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 4814
+  },
+  "follower_delta_d1": 0
  },
  {
   "media_id": "18114392516334193",
@@ -83,14 +218,40 @@
   "hook": "褒められた10回より、けなされた1回",
   "test": null,
   "d1": {
-   "measured_at": "2026-11-14",
+   "auto": true,
+   "age_h": 24,
+   "measured_at": "2026-11-14T19:46",
    "reach": 137,
+   "views": 147,
+   "likes": 4,
+   "comments": 0,
    "saved": 0,
    "shares": 0,
    "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 3253
+  },
+  "vars": {
+   "format": "legacy",
+   "hook_type": "statement"
+  },
+  "hypothesis": "E002",
+  "duration": 20.599999999999998,
+  "d3": {
+   "auto": true,
+   "age_h": 72,
+   "measured_at": "2026-11-16T19:47",
+   "reach": 137,
    "views": 147,
-   "avg_watch_ms": 3253
-  }
+   "likes": 4,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 3229
+  },
+  "follower_delta_d1": -1
  },
  {
   "media_id": "18220123663355911",
@@ -102,14 +263,40 @@
   "hook": "たった4秒の沈黙で、人は不安になる",
   "test": null,
   "d1": {
-   "measured_at": "2026-11-15",
+   "auto": true,
+   "age_h": 24,
+   "measured_at": "2026-11-15T19:46",
    "reach": 104,
+   "views": 116,
+   "likes": 0,
+   "comments": 0,
    "saved": 0,
    "shares": 0,
    "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 4275
+  },
+  "vars": {
+   "format": "legacy",
+   "hook_type": "statement"
+  },
+  "hypothesis": "E002",
+  "duration": 21.0,
+  "d3": {
+   "auto": true,
+   "age_h": 72,
+   "measured_at": "2026-11-17T19:46",
+   "reach": 104,
    "views": 116,
-   "avg_watch_ms": 4275
-  }
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 4249
+  },
+  "follower_delta_d1": -1
  },
  {
   "media_id": "18077311364771649",
@@ -121,14 +308,40 @@
   "hook": "お金で幸せは買える。使い道しだいで",
   "test": null,
   "d1": {
-   "measured_at": "2026-11-16",
+   "auto": true,
+   "age_h": 24,
+   "measured_at": "2026-11-16T19:47",
    "reach": 19,
+   "views": 21,
+   "likes": 0,
+   "comments": 0,
    "saved": 0,
    "shares": 0,
    "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 2247
+  },
+  "vars": {
+   "format": "legacy",
+   "hook_type": "statement"
+  },
+  "hypothesis": "E002",
+  "duration": 21.0,
+  "d3": {
+   "auto": true,
+   "age_h": 72,
+   "measured_at": "2026-11-18T19:46",
+   "reach": 19,
    "views": 21,
-   "avg_watch_ms": 2247
-  }
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 2247
+  },
+  "follower_delta_d1": 0
  },
  {
   "media_id": "18099121871133263",
@@ -140,14 +353,26 @@
   "hook": "この数字のルール、あなたは気づける？",
   "test": "hook:question",
   "d1": {
-   "measured_at": "2026-11-17",
+   "auto": true,
+   "age_h": 24,
+   "measured_at": "2026-11-17T19:46",
    "reach": 19,
+   "views": 20,
+   "likes": 0,
+   "comments": 0,
    "saved": 0,
    "shares": 0,
    "follows": null,
-   "views": 20,
-   "avg_watch_ms": 2380
-  }
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 2380
+  },
+  "vars": {
+   "format": "legacy",
+   "hook_type": "question"
+  },
+  "hypothesis": "E002",
+  "duration": 21.4,
+  "follower_delta_d1": 0
  },
  {
   "media_id": "18093751439228197",
@@ -159,14 +384,26 @@
   "hook": "第一印象って何秒で決まると思う？",
   "test": "hook:question",
   "d1": {
-   "measured_at": "2026-11-18",
+   "auto": true,
+   "age_h": 24,
+   "measured_at": "2026-11-18T19:46",
    "reach": 105,
+   "views": 119,
+   "likes": 0,
+   "comments": 0,
    "saved": 0,
    "shares": 0,
    "follows": null,
-   "views": 119,
-   "avg_watch_ms": 4231
-  }
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 4231
+  },
+  "vars": {
+   "format": "legacy",
+   "hook_type": "question"
+  },
+  "hypothesis": "E002",
+  "duration": 20.4,
+  "follower_delta_d1": 0
  },
  {
   "media_id": "18407091388207408",
@@ -176,6 +413,12 @@
   "slug": "2026-11-18_gratitude",
   "topic": "メンタル",
   "hook": "週1回・5分で気分が上がる習慣って？",
-  "test": "hook:question"
+  "test": "hook:question",
+  "vars": {
+   "format": "legacy",
+   "hook_type": "question"
+  },
+  "hypothesis": "E002",
+  "duration": 21.0
  }
 ]

@@ -1,0 +1,28 @@
+{
+ "slug": "quiz-ikea",
+ "type": "quiz",
+ "series": "quiz",
+ "topic": "お金・消費",
+ "hook": "自分で組み立てた家具、どう感じる？",
+ "vars": {
+  "format": "brand_v1",
+  "length_s": "14",
+  "cta": "comment",
+  "hook_type": "plain"
+ },
+ "hypothesis": "E002",
+ "content": {
+  "no": 3,
+  "q": "自分で組み立てた\n家具の価値は\nどう感じる？",
+  "choices": [
+   "完成品より高い",
+   "完成品と同じ",
+   "完成品より低い"
+  ],
+  "answer": 0,
+  "reveal": "自分で組み立てた人は\n同じ箱により高い値段をつけた\n（完成できなかった時は効果なし）",
+  "term": "IKEA効果",
+  "ref": "Norton, Mochon & Ariely (2012) J. Consumer Psych."
+ },
+ "caption": "【3秒心理クイズ】自分で組み立てた家具の価値、どう感じる？\n\nA：完成品より高い\nB：完成品と同じ\nC：完成品より低い\n\nA・B・Cでコメントしてね💬\n（答えは動画の最後で発表）\n\n.\n.\n.\n\n▼答えと解説\n正解は A：完成品より高い\n\n収納箱を自分で組み立てた人は、完成品を見ただけの人より、同じ箱に高い値段をつけました。\n手間をかけたものほど価値を高く感じる。これが【IKEA効果】です。\nただし、途中で完成できなかったときは、この効果は消えました。\n\n出典：Norton, Mochon & Ariely (2012) Journal of Consumer Psychology\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n毎日1問、研究にもとづく心理クイズ\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #心理クイズ #行動経済学 #IKEA効果"
+}

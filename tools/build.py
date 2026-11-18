@@ -2,12 +2,15 @@
   python3 tools/build.py queue/004_peak-end.json [YYYY-MM-DD]
 出力: 画像はJPEG（Instagram APIはJPEGのみ受付）、manifest.json、caption.txt、preview.jpg
 仕様の形式:
- {"slug":"peak-end","type":"carousel|reel","topic":"テーマ","hook":"冒頭の一言","test":"A/Bテストのラベル(任意)",
-  "content":{...carousel.py または reel.py の形式...},"caption":"キャプション全文"}"""
+ {"slug":"peak-end","type":"carousel|reel|quiz","series":"企画名(quiz/myth/choice/ngok/people/ranking)",
+  "topic":"テーマ","hook":"冒頭の一言","test":"(旧)A/Bテストのラベル",
+  "vars":{"変数名":"値", ...},      # 改善ループで比較する変数（hook_type, length_s, cta など）
+  "hypothesis":"E003",             # この投稿が参加している実験ID（state/experiments.json）
+  "content":{...carousel.py / reel.py / quiz_reel.py の形式...},"caption":"キャプション全文"}"""
 import json, os, sys, datetime as dt, tempfile
 from PIL import Image
 sys.path.insert(0, os.path.dirname(__file__))
-import carousel, reel
+import carousel, reel, quiz_reel
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JST = dt.timezone(dt.timedelta(hours=9))
@@ -16,7 +19,7 @@ def build(spec_path, date=None):
     sp = json.load(open(spec_path, encoding='utf-8'))
     date = date or dt.datetime.now(JST).strftime('%Y-%m-%d')
     out = os.path.join(ROOT, 'posts', f'{date}_{sp["slug"]}'); os.makedirs(out, exist_ok=True)
-    man = {k: sp.get(k) for k in ('type', 'topic', 'hook', 'test')}
+    man = {k: sp.get(k) for k in ('type', 'series', 'topic', 'hook', 'test', 'vars', 'hypothesis')}
     man['caption'] = sp['caption']
     if sp['type'] == 'carousel':
         d = sp['content']; total = len(d['items']) + 3
@@ -38,6 +41,11 @@ def build(spec_path, date=None):
         sheet.save(f'{out}/preview.jpg', quality=85)
     elif sp['type'] == 'reel':
         dur = reel.reel(sp['content'], f'{out}/reel.mp4', tempfile.mkdtemp())
+        man['media'] = ['reel.mp4']; man['cover'] = 'reel_cover.jpg'; man['duration'] = dur
+        os.replace(f'{out}/reel_preview.jpg', f'{out}/preview.jpg')
+    elif sp['type'] == 'quiz':
+        dur = quiz_reel.quiz_reel(sp['content'], f'{out}/reel.mp4', tempfile.mkdtemp())
+        man['type'] = 'reel'; man['format'] = 'quiz'
         man['media'] = ['reel.mp4']; man['cover'] = 'reel_cover.jpg'; man['duration'] = dur
         os.replace(f'{out}/reel_preview.jpg', f'{out}/preview.jpg')
     json.dump(man, open(f'{out}/manifest.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

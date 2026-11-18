@@ -195,13 +195,13 @@ def quiz_reel(c, out, tmp):
 
         if t < T_END:
             # 問題文
-            qs = fit(dr, qlines, 112, 960, 12)
+            qs = min(fit(dr, qlines, 112, 960, 12), int(330 / (1.24 * len(qlines))))
             k = back((t - T_Q) / 0.35)
             def qdraw(d, w, h):
                 y = h / 2 - (len(qlines) - 1) * qs * 0.62
                 for ln in qlines:
                     d.text((w / 2, y), ln, font=font(qs), fill=INK, stroke_width=12, stroke_fill=WHITE, anchor='mm'); y += qs * 1.24
-            q_box = (0, 300, W, 600)
+            q_box = (0, 290, W, 630)
             pop_layer(im, qdraw, q_box, k)
 
             # 選択肢
@@ -228,7 +228,7 @@ def quiz_reel(c, out, tmp):
                 dr.rounded_rectangle((x0, ya, x1, yb), radius=40, fill=col + (255,), outline=INK, width=8)
                 dr.ellipse((x0 + 26, (ya + yb) / 2 - 50, x0 + 126, (ya + yb) / 2 + 50), fill=WHITE, outline=INK, width=6)
                 dr.text((x0 + 76, (ya + yb) / 2), LETTERS[i], font=font(64), fill=INK, anchor='mm')
-                fs = fit(dr, [ch], 78 if nC == 3 else 88, x1 - x0 - 200, 0)
+                fs = fit(dr, [ch], 78 if nC == 3 else 88, x1 - x0 - 200 - 240, 0)
                 dr.text((x0 + 160, (ya + yb) / 2), ch, font=font(fs), fill=WHITE if not (revealed and not correct) else (120, 105, 60),
                         anchor='lm')
                 if revealed and correct:
@@ -276,7 +276,7 @@ def quiz_reel(c, out, tmp):
             # ハカセ（左下）
             mood = 'think' if t < T_REV else ('wow' if t < T_REV + 1.2 else 'happy')
             if t < T_DRUM or t >= T_REV:
-                hx, hy = 175, 1660
+                hx, hy = (175, 1660) if t < T_EXP else (905, 1700)
                 hakase(dr, hx, hy, 0.62, mood, t)
                 if t < T_REV and t >= T_CH:
                     bubble(dr, 470, 1540, 'どれだと思う？', 48)

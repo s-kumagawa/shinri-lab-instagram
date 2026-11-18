@@ -1,0 +1,28 @@
+{
+ "slug": "quiz-loss",
+ "type": "quiz",
+ "series": "quiz",
+ "topic": "お金・消費",
+ "hook": "1万円の損は、1万円の得の何倍つらい？",
+ "vars": {
+  "format": "brand_v1",
+  "length_s": "14",
+  "cta": "comment",
+  "hook_type": "plain"
+ },
+ "hypothesis": "E002",
+ "content": {
+  "no": 2,
+  "q": "1万円の「損」は\n1万円の「得」の\n何倍つらい？",
+  "choices": [
+   "同じくらい",
+   "約2倍",
+   "約10倍"
+  ],
+  "answer": 1,
+  "reveal": "人は同じ金額でも\n得する喜びより損する痛みを\n約2倍強く感じる",
+  "term": "損失回避",
+  "ref": "Tversky & Kahneman (1992) J. Risk and Uncertainty"
+ },
+ "caption": "【3秒心理クイズ】1万円の「損」は、1万円の「得」の何倍つらい？\n\nA：同じくらい\nB：約2倍\nC：約10倍\n\nA・B・Cでコメントしてね💬\n（答えは動画の最後で発表）\n\n.\n.\n.\n\n▼答えと解説\n正解は B：約2倍\n\n人は同じ金額でも、得をする喜びより、損をする痛みを強く感じます。\nその差はおよそ2倍と推定されています。これが【損失回避】。\n\n「今買わないと損！」と感じたら、ひと呼吸おいてみてください。\n\n出典：Tversky & Kahneman (1992) Journal of Risk and Uncertainty\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n毎日1問、研究にもとづく心理クイズ\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #心理クイズ #行動経済学 #お金の勉強 #心理学豆知識"
+}
