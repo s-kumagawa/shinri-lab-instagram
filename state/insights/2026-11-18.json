@@ -1,10 +1,10 @@
 {
- "taken_at": "2026-11-18T19:44:13.536602+09:00",
+ "taken_at": "2026-11-18T19:46:38.086065+09:00",
  "account": {
   "id": "17841473061253620",
   "followers_count": 10,
   "follows_count": 0,
-  "media_count": 9,
+  "media_count": 10,
   "username": "shinri.lab.jp",
   "day": {
    "reach": 0,
@@ -15,6 +15,27 @@
   }
  },
  "media": [
+  {
+   "id": "18407091388207408",
+   "caption": "週1回・5分で、気分が上がる習慣って何だと思いますか？\n\n答えは「感謝したこと」を書き出すこと。\n\nある実験では、参加者",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/Df4Up1toVY7/",
+   "timestamp": "2026-11-18T10:46:20+0000",
+   "insights": {
+    "reach": 0,
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 0,
+    "ig_reels_video_view_total_time": 0
+   }
+  },
   {
    "id": "18093751439228197",
    "caption": "第一印象って、何秒で決まると思いますか？\n\n答えは、たった0.1秒。\n\n顔写真を0.1秒だけ見せて印象を答えてもらう実験",

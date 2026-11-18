@@ -157,6 +157,25 @@
   "slug": "2026-11-17_first-impression",
   "topic": "人間関係",
   "hook": "第一印象って何秒で決まると思う？",
+  "test": "hook:question",
+  "d1": {
+   "measured_at": "2026-11-18",
+   "reach": 105,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "views": 119,
+   "avg_watch_ms": 4231
+  }
+ },
+ {
+  "media_id": "18407091388207408",
+  "permalink": "https://www.instagram.com/reel/Df4Up1toVY7/",
+  "timestamp": "2026-11-18T10:46:20+0000",
+  "type": "reel",
+  "slug": "2026-11-18_gratitude",
+  "topic": "メンタル",
+  "hook": "週1回・5分で気分が上がる習慣って？",
   "test": "hook:question"
  }
 ]
