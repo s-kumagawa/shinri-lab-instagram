@@ -463,5 +463,25 @@
    "ig_reels_avg_watch_time": 2269
   },
   "follower_delta_d1": 0
+ },
+ {
+  "media_id": "18002734542040333",
+  "permalink": "https://www.instagram.com/reel/Df65kq1kmpp/",
+  "timestamp": "2026-11-19T10:47:18+0000",
+  "type": "reel",
+  "slug": "2026-11-19_quiz-habit",
+  "topic": "習慣",
+  "hook": "新しい習慣が身につくまで、だいたい何日？",
+  "test": null,
+  "series": "quiz",
+  "format": "quiz",
+  "vars": {
+   "format": "brand_v1",
+   "length_s": "14",
+   "cta": "comment",
+   "hook_type": "plain"
+  },
+  "hypothesis": "E002",
+  "duration": 14.0
  }
 ]
