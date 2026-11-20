@@ -1,0 +1,28 @@
+{
+ "slug": "quiz-exposure",
+ "type": "quiz",
+ "series": "quiz",
+ "topic": "人間関係",
+ "hook": "何度も見るだけで、好感度はどうなる？",
+ "vars": {
+  "format": "brand_v1",
+  "length_s": "14",
+  "cta": "comment",
+  "hook_type": "plain"
+ },
+ "hypothesis": "E002",
+ "content": {
+  "no": 6,
+  "q": "知らない人の顔写真\n何度も見るだけで\n好感度はどうなる？",
+  "choices": [
+   "上がる",
+   "変わらない",
+   "下がる"
+  ],
+  "answer": 0,
+  "reveal": "見た回数が多い顔ほど\n好ましく評価された\nくり返し会うことには意味がある",
+  "term": "単純接触効果",
+  "ref": "Zajonc (1968) J. Pers. & Soc. Psych."
+ },
+ "caption": "【3秒心理クイズ】知らない人の顔写真。何度も見るだけで、好感度はどうなる？\n\nA：上がる\nB：変わらない\nC：下がる\n\nA・B・Cでコメントしてね💬\n（答えは動画の最後で発表）\n\n.\n.\n.\n\n▼答えと解説\n正解は A：上がる\n\n顔写真を見せる回数を変えた実験では、見た回数が多い顔ほど好ましく評価されました。\nこれが【単純接触効果】。\n\n仲良くなりたい人とは、長く1回より、短くても何度も会うのがおすすめです。\n\n出典：Zajonc (1968) Journal of Personality and Social Psychology\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n毎日1問、研究にもとづく心理クイズ\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #心理クイズ #単純接触効果 #人間関係 #心理学豆知識"
+}

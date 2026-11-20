@@ -526,5 +526,25 @@
    "ig_reels_avg_watch_time": 3858
   },
   "follower_delta_d1": 0
+ },
+ {
+  "media_id": "17921143278466523",
+  "permalink": "https://www.instagram.com/reel/Df9eXh_GRba/",
+  "timestamp": "2026-11-20T10:47:28+0000",
+  "type": "reel",
+  "slug": "2026-11-20_quiz-loss",
+  "topic": "お金・消費",
+  "hook": "1万円の損は、1万円の得の何倍つらい？",
+  "test": null,
+  "series": "quiz",
+  "format": "quiz",
+  "vars": {
+   "format": "brand_v1",
+   "length_s": "14",
+   "cta": "comment",
+   "hook_type": "plain"
+  },
+  "hypothesis": "E002",
+  "duration": 14.0
  }
 ]

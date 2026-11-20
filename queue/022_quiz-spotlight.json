@@ -1,0 +1,28 @@
+{
+ "slug": "quiz-spotlight",
+ "type": "quiz",
+ "series": "quiz",
+ "topic": "人間関係",
+ "hook": "恥ずかしいTシャツ、何割の人が気づいた？",
+ "vars": {
+  "format": "brand_v1",
+  "length_s": "14",
+  "cta": "comment",
+  "hook_type": "plain"
+ },
+ "hypothesis": "E002",
+ "content": {
+  "no": 4,
+  "q": "恥ずかしいTシャツで\n教室に入ったら\n何割が気づいた？",
+  "choices": [
+   "約2割",
+   "約5割",
+   "約8割"
+  ],
+  "answer": 0,
+  "reveal": "本人は「約半数が気づく」と予想\nでも実際に気づいたのは約2割\n人は思うほど見られていない",
+  "term": "スポットライト効果",
+  "ref": "Gilovich, Medvec & Savitsky (2000) J. Pers. & Soc. Psych."
+ },
+ "caption": "【3秒心理クイズ】恥ずかしいTシャツを着て教室に入ったら、何割の人が気づいた？\n\nA：約2割\nB：約5割\nC：約8割\n\nA・B・Cでコメントしてね💬\n（答えは動画の最後で発表）\n\n.\n.\n.\n\n▼答えと解説\n正解は A：約2割\n\nある実験で、学生に恥ずかしいTシャツを着て教室に入ってもらいました。\n本人は「約半数が気づく」と予想しましたが、実際に気づいたのは約2割。\n人は、自分が思うほど他人に見られていません。これが【スポットライト効果】です。\n\n出典：Gilovich, Medvec & Savitsky (2000) Journal of Personality and Social Psychology\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n毎日1問、研究にもとづく心理クイズ\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #心理クイズ #スポットライト効果 #気にしすぎ #心理学豆知識"
+}

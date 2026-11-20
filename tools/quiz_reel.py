@@ -205,6 +205,7 @@ def quiz_reel(c, out, tmp):
             pop_layer(im, qdraw, q_box, k)
 
             # 選択肢
+            late = []
             for i, ch in enumerate(choices):
                 st = T_CH + i * 0.22
                 if t < st: continue
@@ -228,7 +229,7 @@ def quiz_reel(c, out, tmp):
                 dr.rounded_rectangle((x0, ya, x1, yb), radius=40, fill=col + (255,), outline=INK, width=8)
                 dr.ellipse((x0 + 26, (ya + yb) / 2 - 50, x0 + 126, (ya + yb) / 2 + 50), fill=WHITE, outline=INK, width=6)
                 dr.text((x0 + 76, (ya + yb) / 2), LETTERS[i], font=font(64), fill=INK, anchor='mm')
-                fs = fit(dr, [ch], 78 if nC == 3 else 88, x1 - x0 - 200 - 240, 0)
+                fs = fit(dr, [ch], 78 if nC == 3 else 88, x1 - x0 - 200, 0)
                 dr.text((x0 + 160, (ya + yb) / 2), ch, font=font(fs), fill=WHITE if not (revealed and not correct) else (120, 105, 60),
                         anchor='lm')
                 if revealed and correct:
@@ -236,8 +237,10 @@ def quiz_reel(c, out, tmp):
                     def tag(d, w, h):
                         d.rounded_rectangle((6, 6, w - 6, h - 6), radius=(h - 12) // 2, fill=WHITE, outline=INK, width=6)
                         d.text((w / 2, h / 2), '正解！', font=font(50), fill=CORAL, anchor='mm')
-                    pop_layer(im, tag, (int(x1 - 250), int((ya + yb) / 2 - 50), int(x1 - 30), int((ya + yb) / 2 + 50)), kk2)
+                    late.append((tag, (int(x1 - 230), int(yb - 40), int(x1 + 10), int(yb + 60)), kk2))
 
+            for fn, box, kk2 in late:
+                pop_layer(im, fn, box, kk2)
             ch_bottom = ch_top + nC * (ch_h + ch_gap)
             # カウントダウン
             if T_CD <= t < T_DRUM:
@@ -276,7 +279,7 @@ def quiz_reel(c, out, tmp):
             # ハカセ（左下）
             mood = 'think' if t < T_REV else ('wow' if t < T_REV + 1.2 else 'happy')
             if t < T_DRUM or t >= T_REV:
-                hx, hy = (175, 1660) if t < T_EXP else (905, 1700)
+                hx, hy = (175, 1660) if t < T_EXP else (915, 1770)
                 hakase(dr, hx, hy, 0.62, mood, t)
                 if t < T_REV and t >= T_CH:
                     bubble(dr, 470, 1540, 'どれだと思う？', 48)

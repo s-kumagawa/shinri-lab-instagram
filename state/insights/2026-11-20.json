@@ -1,10 +1,10 @@
 {
- "taken_at": "2026-11-20T19:44:27.993447+09:00",
+ "taken_at": "2026-11-20T19:57:56.119461+09:00",
  "account": {
   "id": "17841473061253620",
   "followers_count": 10,
   "follows_count": 0,
-  "media_count": 11,
+  "media_count": 12,
   "username": "shinri.lab.jp",
   "day": {
    "reach": 4,
@@ -16,6 +16,27 @@
  },
  "media": [
   {
+   "id": "17921143278466523",
+   "caption": "【3秒心理クイズ】1万円の「損」は、1万円の「得」の何倍つらい？\n\nA：同じくらい\nB：約2倍\nC：約10倍\n\nA・B・",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/Df9eXh_GRba/",
+   "timestamp": "2026-11-20T10:47:28+0000",
+   "insights": {
+    "reach": 0,
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 0,
+    "ig_reels_video_view_total_time": 0
+   }
+  },
+  {
    "id": "18002734542040333",
    "caption": "【3秒心理クイズ】新しい習慣が身につくまで、だいたい何日？\n\nA：21日\nB：66日\nC：100日\n\nA・B・Cでコメン",
    "comments_count": 0,
@@ -26,7 +47,7 @@
    "timestamp": "2026-11-19T10:47:18+0000",
    "insights": {
     "reach": 30,
-    "views": 40,
+    "views": 42,
     "likes": 0,
     "comments": 0,
     "shares": 0,
