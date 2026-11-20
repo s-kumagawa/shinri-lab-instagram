@@ -265,7 +265,21 @@
    "profile_visits": null,
    "ig_reels_avg_watch_time": 3229
   },
-  "follower_delta_d1": -1
+  "follower_delta_d1": -1,
+  "d7": {
+   "auto": true,
+   "age_h": 168,
+   "measured_at": "2026-11-20T19:44",
+   "reach": 137,
+   "views": 147,
+   "likes": 4,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 3229
+  }
  },
  {
   "media_id": "18220123663355911",
@@ -431,7 +445,21 @@
   },
   "hypothesis": "E002",
   "duration": 20.4,
-  "follower_delta_d1": 0
+  "follower_delta_d1": 0,
+  "d3": {
+   "auto": true,
+   "age_h": 72,
+   "measured_at": "2026-11-20T19:44",
+   "reach": 105,
+   "views": 119,
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 4231
+  }
  },
  {
   "media_id": "18407091388207408",
@@ -482,6 +510,21 @@
    "hook_type": "plain"
   },
   "hypothesis": "E002",
-  "duration": 14.0
+  "duration": 14.0,
+  "d1": {
+   "auto": true,
+   "age_h": 24,
+   "measured_at": "2026-11-20T19:44",
+   "reach": 30,
+   "views": 40,
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 3858
+  },
+  "follower_delta_d1": 0
  }
 ]
