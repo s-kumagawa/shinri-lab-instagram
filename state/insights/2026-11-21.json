@@ -1,10 +1,10 @@
 {
- "taken_at": "2026-11-21T19:43:39.545471+09:00",
+ "taken_at": "2026-11-21T19:46:13.824034+09:00",
  "account": {
   "id": "17841473061253620",
   "followers_count": 10,
   "follows_count": 0,
-  "media_count": 12,
+  "media_count": 13,
   "username": "shinri.lab.jp",
   "day": {
    "reach": 2,
@@ -15,6 +15,27 @@
   }
  },
  "media": [
+  {
+   "id": "18101165354394637",
+   "caption": "【3秒心理クイズ】自分で組み立てた家具の価値、どう感じる？\n\nA：完成品より高い\nB：完成品と同じ\nC：完成品より低い\n",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgAC_GyFQm9/",
+   "timestamp": "2026-11-21T10:45:45+0000",
+   "insights": {
+    "reach": 0,
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 0,
+    "ig_reels_video_view_total_time": 0
+   }
+  },
   {
    "id": "17921143278466523",
    "caption": "【3秒心理クイズ】1万円の「損」は、1万円の「得」の何倍つらい？\n\nA：同じくらい\nB：約2倍\nC：約10倍\n\nA・B・",

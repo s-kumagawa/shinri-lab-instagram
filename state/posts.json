@@ -589,5 +589,25 @@
    "ig_reels_avg_watch_time": 5415
   },
   "follower_delta_d1": 0
+ },
+ {
+  "media_id": "18101165354394637",
+  "permalink": "https://www.instagram.com/reel/DgAC_GyFQm9/",
+  "timestamp": "2026-11-21T10:45:45+0000",
+  "type": "reel",
+  "slug": "2026-11-21_quiz-ikea",
+  "topic": "お金・消費",
+  "hook": "自分で組み立てた家具、どう感じる？",
+  "test": null,
+  "series": "quiz",
+  "format": "quiz",
+  "vars": {
+   "format": "brand_v1",
+   "length_s": "14",
+   "cta": "comment",
+   "hook_type": "plain"
+  },
+  "hypothesis": "E002",
+  "duration": 14.0
  }
 ]
