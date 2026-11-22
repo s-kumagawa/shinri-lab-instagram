@@ -6,7 +6,8 @@ content = {
   "answer": 0,                              # 正解の番号
   "reveal": "顔を0.1秒見ただけの印象が\nじっくり見た印象と\nほぼ同じだった",  # 答えの根拠（3行まで）
   "term": "0.1秒の第一印象",                 # 用語バッジ
-  "ref": "Willis & Todorov (2006) Psychological Science"
+  "ref": "Willis & Todorov (2006) Psychological Science",
+  "teaser": true                            # （任意）選択肢と同時に「正解は最後に発表！」を出す（実験E006）
 }
 ブランド要素：黄色×黒の配色、シリーズ名「3秒心理クイズ」、キャラクター「ハカセ」、
 決まった効果音（ポップ・カウントダウン・正解チャイム）。"""
@@ -242,6 +243,13 @@ def quiz_reel(c, out, tmp):
             for fn, box, kk2 in late:
                 pop_layer(im, fn, box, kk2)
             ch_bottom = ch_top + nC * (ch_h + ch_gap)
+            # 予告（E006）：選択肢が出たらカウントダウンまで「正解は最後に発表！」
+            if c.get('teaser') and T_CH + 0.3 <= t < T_CD:
+                kk = back((t - T_CH - 0.3) / 0.3)
+                def teaser(d, w, h):
+                    d.rounded_rectangle((6, 6, w - 6, h - 6), radius=(h - 12) // 2, fill=CORAL, outline=INK, width=8)
+                    d.text((w / 2, h / 2), '正解は最後に発表！', font=font(62), fill=WHITE, anchor='mm', stroke_width=4, stroke_fill=INK)
+                pop_layer(im, teaser, (140, Z + 90, 940, Z + 220), kk)
             # カウントダウン
             if T_CD <= t < T_DRUM:
                 left = 3 - int(t - T_CD); frac = (t - T_CD) % 1

@@ -1,10 +1,10 @@
 {
- "taken_at": "2026-11-22T19:44:26.084742+09:00",
+ "taken_at": "2026-11-22T19:46:36.482943+09:00",
  "account": {
   "id": "17841473061253620",
   "followers_count": 10,
   "follows_count": 0,
-  "media_count": 13,
+  "media_count": 14,
   "username": "shinri.lab.jp",
   "day": {
    "reach": 0,
@@ -15,6 +15,27 @@
   }
  },
  "media": [
+  {
+   "id": "18082427054735807",
+   "caption": "【3秒心理クイズ】恥ずかしいTシャツを着て教室に入ったら、何割の人が気づいた？\n\nA：約2割\nB：約5割\nC：約8割\n\n",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgCn1a6FPiz/",
+   "timestamp": "2026-11-22T10:46:17+0000",
+   "insights": {
+    "reach": 0,
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 0,
+    "ig_reels_video_view_total_time": 0
+   }
+  },
   {
    "id": "18101165354394637",
    "caption": "【3秒心理クイズ】自分で組み立てた家具の価値、どう感じる？\n\nA：完成品より高い\nB：完成品と同じ\nC：完成品より低い\n",

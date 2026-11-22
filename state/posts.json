@@ -383,7 +383,21 @@
    "profile_visits": null,
    "ig_reels_avg_watch_time": 2247
   },
-  "follower_delta_d1": 0
+  "follower_delta_d1": 0,
+  "d7": {
+   "auto": true,
+   "age_h": 168,
+   "measured_at": "2026-11-22T19:46",
+   "reach": 19,
+   "views": 21,
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 2247
+  }
  },
  {
   "media_id": "18099121871133263",
@@ -553,7 +567,21 @@
    "profile_visits": null,
    "ig_reels_avg_watch_time": 3858
   },
-  "follower_delta_d1": 0
+  "follower_delta_d1": 0,
+  "d3": {
+   "auto": true,
+   "age_h": 72,
+   "measured_at": "2026-11-22T19:46",
+   "reach": 33,
+   "views": 42,
+   "likes": 0,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 3912
+  }
  },
  {
   "media_id": "17921143278466523",
@@ -598,6 +626,41 @@
   "slug": "2026-11-21_quiz-ikea",
   "topic": "お金・消費",
   "hook": "自分で組み立てた家具、どう感じる？",
+  "test": null,
+  "series": "quiz",
+  "format": "quiz",
+  "vars": {
+   "format": "brand_v1",
+   "length_s": "14",
+   "cta": "comment",
+   "hook_type": "plain"
+  },
+  "hypothesis": "E002",
+  "duration": 14.0,
+  "d1": {
+   "auto": true,
+   "age_h": 24,
+   "measured_at": "2026-11-22T19:46",
+   "reach": 115,
+   "views": 134,
+   "likes": 1,
+   "comments": 0,
+   "saved": 0,
+   "shares": 0,
+   "follows": null,
+   "profile_visits": null,
+   "ig_reels_avg_watch_time": 4905
+  },
+  "follower_delta_d1": 0
+ },
+ {
+  "media_id": "18082427054735807",
+  "permalink": "https://www.instagram.com/reel/DgCn1a6FPiz/",
+  "timestamp": "2026-11-22T10:46:17+0000",
+  "type": "reel",
+  "slug": "2026-11-22_quiz-spotlight",
+  "topic": "人間関係",
+  "hook": "恥ずかしいTシャツ、何割の人が気づいた？",
   "test": null,
   "series": "quiz",
   "format": "quiz",

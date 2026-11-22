@@ -1,0 +1,30 @@
+{
+ "slug": "quiz-planning",
+ "type": "quiz",
+ "series": "quiz",
+ "topic": "習慣",
+ "hook": "卒論、自分の予想どおりに書き終えたのは？",
+ "content": {
+  "no": 11,
+  "q": "卒論を書く大学生\n自分の予想どおりに\n書き終えたのは？",
+  "choices": [
+   "約3割",
+   "約5割",
+   "約8割"
+  ],
+  "answer": 0,
+  "reveal": "予想は平均約34日\n実際は平均約56日\n予想どおりに終えたのは約3割",
+  "term": "計画錯誤",
+  "ref": "Buehler, Griffin & Ross (1994) J. Pers. & Soc. Psych.",
+  "teaser": false
+ },
+ "caption": "【3秒心理クイズ】卒論を書く大学生。自分で予想した日までに書き終えたのは？\n\nA：約3割\nB：約5割\nC：約8割\n\nA・B・Cでコメントしてね💬\n（答えは動画の最後で発表）\n\n.\n.\n.\n\n▼答えと解説\n正解は A：約3割\n\n学生の予想は平均約34日でしたが、実際には平均約56日かかり、予想どおりに終えたのは約3割でした。\n人は作業にかかる時間を短く見積もりがち。これが【計画錯誤】です。\n\n予定は「前回は実際何日かかった？」から立てるのがコツ。\n\n出典：Buehler, Griffin & Ross (1994) Journal of Personality and Social Psychology\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n毎日1問、研究にもとづく心理クイズ\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #心理クイズ #計画錯誤 #先延ばし #心理学豆知識",
+ "vars": {
+  "format": "brand_v1",
+  "length_s": "14",
+  "cta": "comment",
+  "hook_type": "plain",
+  "teaser": "none"
+ },
+ "hypothesis": "E006"
+}

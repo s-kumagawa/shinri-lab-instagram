@@ -15,7 +15,7 @@
  },
  {
   "id": "E002",
-  "status": "running",
+  "status": "adopted",
   "started": "2026-11-19",
   "hypothesis": "ブランド化した新形式（黄色×黒・ハカセ・効果音・答えは最後）は旧リールより完走率が上がる",
   "variable": "format",
@@ -24,7 +24,9 @@
   "metric": "completion_%",
   "min_n": 3,
   "threshold": 0.3,
-  "note": "control は旧リールの直近の数字（vars.format=legacy を後から付与）。新形式の投稿はすべて treatment"
+  "note": "control は旧リールの直近の数字（vars.format=legacy を後から付与）。新形式の投稿はすべて treatment",
+  "decided": "2026-11-22",
+  "result": "採用。完走率の中央値 旧リール18.1%（8本）→ 新形式35.0%（3本）で+93%。初日リーチの中央値も62.5→115。反応（いいね等）はどちらも0で差なし"
  },
  {
   "id": "E003",
@@ -61,13 +63,14 @@
  },
  {
   "id": "E006",
-  "status": "backlog",
+  "status": "running",
   "hypothesis": "選択肢が出た瞬間に「正解は最後に発表！」と予告すると、約4秒地点の離脱が減り完走率が上がる",
   "variable": "teaser",
   "control": "none",
   "treatment": "teaser",
   "metric": "completion_%",
   "min_n": 3,
-  "threshold": 0.2
+  "threshold": 0.2,
+  "started": "2026-11-23"
  }
 ]
