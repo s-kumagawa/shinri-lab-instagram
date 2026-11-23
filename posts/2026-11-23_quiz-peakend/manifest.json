@@ -1,0 +1,22 @@
+{
+ "type": "reel",
+ "series": "quiz",
+ "topic": "日常の心理",
+ "hook": "もう一度やるなら、どっちのつらい体験を選ぶ？",
+ "test": null,
+ "vars": {
+  "format": "brand_v1",
+  "length_s": "14",
+  "cta": "comment",
+  "hook_type": "plain",
+  "teaser": "none"
+ },
+ "hypothesis": "E006",
+ "caption": "【3秒心理クイズ】冷たい水に手を入れる実験。もう一度やるなら、多くの人が選んだのはどっち？\n\nA：冷たい水に60秒だけ\nB：60秒のあと、水温を少し上げて（まだ冷たいまま）さらに30秒＝合計90秒\n\nA・Bでコメントしてね💬\n（答えは動画の最後で発表）\n\n.\n.\n.\n\n▼答えと解説\n正解は B\n\nつらい時間はBのほうが長いのに、約7割がBを選びました。\n人の記憶は「いちばん強い瞬間（ピーク）」と「最後（エンド）」で決まる。これが【ピーク・エンドの法則】です。\n\nデートや会議も、最後を良くすると全体の印象が変わります。\n\n出典：Kahneman, Fredrickson, Schreiber & Redelmeier (1993) Psychological Science\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n毎日1問、研究にもとづく心理クイズ\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #心理クイズ #ピークエンドの法則 #行動経済学",
+ "format": "quiz",
+ "media": [
+  "reel.mp4"
+ ],
+ "cover": "reel_cover.jpg",
+ "duration": 14.0
+}
