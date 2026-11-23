@@ -715,5 +715,26 @@
    "ig_reels_avg_watch_time": 4902
   },
   "follower_delta_d1": 0
+ },
+ {
+  "media_id": "18130108823297394",
+  "permalink": "https://www.instagram.com/reel/DgFMqppDFbK/",
+  "timestamp": "2026-11-23T10:46:42+0000",
+  "type": "reel",
+  "slug": "2026-11-23_quiz-peakend",
+  "topic": "日常の心理",
+  "hook": "もう一度やるなら、どっちのつらい体験を選ぶ？",
+  "test": null,
+  "series": "quiz",
+  "format": "quiz",
+  "vars": {
+   "format": "brand_v1",
+   "length_s": "14",
+   "cta": "comment",
+   "hook_type": "plain",
+   "teaser": "none"
+  },
+  "hypothesis": "E006",
+  "duration": 14.0
  }
 ]
