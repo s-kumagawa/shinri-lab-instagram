@@ -779,5 +779,26 @@
    "ig_reels_avg_watch_time": 4074
   },
   "follower_delta_d1": 0
+ },
+ {
+  "media_id": "18139365553633754",
+  "permalink": "https://www.instagram.com/reel/DgHxgc1DIya/",
+  "timestamp": "2026-11-24T10:47:06+0000",
+  "type": "reel",
+  "slug": "2026-11-24_quiz-exposure",
+  "topic": "人間関係",
+  "hook": "何度も見るだけで、好感度はどうなる？",
+  "test": null,
+  "series": "quiz",
+  "format": "quiz",
+  "vars": {
+   "format": "brand_v1",
+   "length_s": "14",
+   "cta": "comment",
+   "hook_type": "plain",
+   "teaser": "teaser"
+  },
+  "hypothesis": "E006",
+  "duration": 14.0
  }
 ]
