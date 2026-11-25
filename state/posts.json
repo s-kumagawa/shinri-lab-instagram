@@ -843,5 +843,26 @@
    "ig_reels_avg_watch_time": 3951
   },
   "follower_delta_d1": 0
+ },
+ {
+  "media_id": "18135788368817868",
+  "permalink": "https://www.instagram.com/reel/DgKWPGtPXy-/",
+  "timestamp": "2026-11-25T10:46:16+0000",
+  "type": "reel",
+  "slug": "2026-11-25_quiz-anchor",
+  "topic": "お金・消費",
+  "hook": "ルーレットの数字で、答えは変わる？",
+  "test": null,
+  "series": "quiz",
+  "format": "quiz",
+  "vars": {
+   "format": "brand_v1",
+   "length_s": "14",
+   "cta": "comment",
+   "hook_type": "plain",
+   "teaser": "none"
+  },
+  "hypothesis": "E006",
+  "duration": 14.0
  }
 ]

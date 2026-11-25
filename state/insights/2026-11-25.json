@@ -1,10 +1,10 @@
 {
- "taken_at": "2026-11-25T19:44:38.712196+09:00",
+ "taken_at": "2026-11-25T19:46:37.753854+09:00",
  "account": {
   "id": "17841473061253620",
   "followers_count": 10,
   "follows_count": 0,
-  "media_count": 16,
+  "media_count": 17,
   "username": "shinri.lab.jp",
   "day": {
    "reach": 0,
@@ -15,6 +15,27 @@
   }
  },
  "media": [
+  {
+   "id": "18135788368817868",
+   "caption": "【3秒心理クイズ】ルーレットで「65」が出た人と「10」が出た人。国連に加盟するアフリカの国の割合を推測したら、高く答え",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgKWPGtPXy-/",
+   "timestamp": "2026-11-25T10:46:16+0000",
+   "insights": {
+    "reach": 0,
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 0,
+    "ig_reels_video_view_total_time": 0
+   }
+  },
   {
    "id": "18139365553633754",
    "caption": "【3秒心理クイズ】知らない人の顔写真。何度も見るだけで、好感度はどうなる？\n\nA：上がる\nB：変わらない\nC：下がる\n\n",
