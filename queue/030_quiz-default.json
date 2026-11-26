@@ -1,0 +1,31 @@
+{
+ "slug": "quiz-default",
+ "type": "quiz",
+ "series": "quiz",
+ "topic": "日常の心理",
+ "hook": "臓器提供、最初の設定で同意率は変わる？",
+ "hypothesis": "E004",
+ "vars": {
+  "format": "brand_v1",
+  "length_s": "14",
+  "cta": "comment",
+  "hook_type": "plain",
+  "teaser": "none"
+ },
+ "content": {
+  "no": 12,
+  "q": "臓器提供の同意率\n高いのは\nどっちの国？",
+  "choices": [
+   "最初からYESの国",
+   "同じくらい",
+   "最初はNOの国"
+  ],
+  "answer": 0,
+  "reveal": "最初からYESの国は約9割以上\n最初はNOの国は約3割以下\n人は初期設定をほとんど変えない",
+  "term": "デフォルト効果",
+  "ref": "Johnson & Goldstein (2003) Science",
+  "teaser": false,
+  "cta": "comment"
+ },
+ "caption": "【3秒心理クイズ】臓器提供の意思表示。「最初からYES（嫌なら変更）」の国と「最初はNO（したい人が変更）」の国、同意率は？\n\nA：最初からYESの国\nB：同じくらい\nC：最初はNOの国\n\nA・B・Cでコメントしてね💬\n（答えは動画の最後で発表）\n\n.\n.\n.\n\n▼答えと解説\n正解は A：最初からYESの国\n\nヨーロッパの国々を比べると、「最初からYES」の国の同意率は約86〜100%、「最初はNO」の国は約4〜28%でした。\n人は最初の設定をほとんど変えない。これが【デフォルト効果】です。\n\nサブスクの「自動更新」も同じ仕組み。契約した日に見直しを。\n\n出典：Johnson & Goldstein (2003) Science\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n毎日1問、研究にもとづく心理クイズ\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #心理クイズ #デフォルト効果 #行動経済学"
+}

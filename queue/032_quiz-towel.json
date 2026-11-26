@@ -1,0 +1,30 @@
+{
+ "slug": "quiz-towel",
+ "type": "quiz",
+ "series": "quiz",
+ "topic": "人間関係",
+ "hook": "タオルの再利用、効いたメッセージは？",
+ "hypothesis": "E004",
+ "vars": {
+  "format": "brand_v1",
+  "length_s": "14",
+  "cta": "comment",
+  "hook_type": "plain",
+  "teaser": "none"
+ },
+ "content": {
+  "no": 14,
+  "q": "ホテルのタオル再利用\nより効いたのは\nどっちのメッセージ？",
+  "choices": [
+   "環境を守ろう",
+   "多くの客が再利用"
+  ],
+  "answer": 1,
+  "reveal": "「環境を守ろう」は約35%\n「多くのお客様が再利用」は約44%\n人は周りの行動に合わせる",
+  "term": "社会的証明",
+  "ref": "Goldstein, Cialdini & Griskevicius (2008)",
+  "teaser": false,
+  "cta": "comment"
+ },
+ "caption": "【3秒心理クイズ】ホテルのタオル再利用のお願い。より多くの人が再利用したのはどっちのメッセージ？\n\nA：環境を守るために再利用を\nB：このホテルのお客様の多くが再利用しています\n\nA・Bでコメントしてね💬\n（答えは動画の最後で発表）\n\n.\n.\n.\n\n▼答えと解説\n正解は B\n\n環境保護を訴えるメッセージでは約35%、「多くのお客様が再利用しています」では約44%が再利用しました。\n人は「みんながしていること」に合わせやすい。これが【社会的証明】です。\n\n出典：Goldstein, Cialdini & Griskevicius (2008) Journal of Consumer Research\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n毎日1問、研究にもとづく心理クイズ\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #心理クイズ #社会的証明 #行動経済学"
+}

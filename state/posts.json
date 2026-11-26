@@ -907,5 +907,26 @@
    "ig_reels_avg_watch_time": 4474
   },
   "follower_delta_d1": 0
+ },
+ {
+  "media_id": "18105765377374793",
+  "permalink": "https://www.instagram.com/reel/DgM7E2dTPTi/",
+  "timestamp": "2026-11-26T10:46:57+0000",
+  "type": "reel",
+  "slug": "2026-11-26_quiz-bystander",
+  "topic": "人間関係",
+  "hook": "助けを求める声、人が多いと助けやすい？",
+  "test": null,
+  "series": "quiz",
+  "format": "quiz",
+  "vars": {
+   "format": "brand_v1",
+   "length_s": "14",
+   "cta": "comment",
+   "hook_type": "plain",
+   "teaser": "teaser"
+  },
+  "hypothesis": "E006",
+  "duration": 14.0
  }
 ]

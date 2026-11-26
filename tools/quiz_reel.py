@@ -7,7 +7,8 @@ content = {
   "reveal": "顔を0.1秒見ただけの印象が\nじっくり見た印象と\nほぼ同じだった",  # 答えの根拠（3行まで）
   "term": "0.1秒の第一印象",                 # 用語バッジ
   "ref": "Willis & Todorov (2006) Psychological Science",
-  "teaser": true                            # （任意）選択肢と同時に「正解は最後に発表！」を出す（実験E006）
+  "teaser": true,                           # （任意）選択肢と同時に「正解は最後に発表！」を出す（実験E006）
+  "cta": "share"                            # （任意）エンドカードを「友達に出題」に（実験E004）。既定は comment
 }
 ブランド要素：黄色×黒の配色、シリーズ名「3秒心理クイズ」、キャラクター「ハカセ」、
 決まった効果音（ポップ・カウントダウン・正解チャイム）。"""
@@ -298,8 +299,12 @@ def quiz_reel(c, out, tmp):
             lt = t - T_END
             k = back(lt / 0.35)
             hakase(dr, W / 2, 860, 1.25 * max(0.01, k), 'happy', t)
-            outlined(dr, (W / 2, 1210), '毎日1問、心理クイズ', 76, sw=10)
-            outlined(dr, (W / 2, 1320), 'フォローして挑戦しよう', 76, sw=10)
+            if c.get('cta') == 'share':  # E004：シェアの呼びかけ
+                outlined(dr, (W / 2, 1210), '友達にも出題してみよう！', 74, sw=10)
+                outlined(dr, (W / 2, 1320), '紙飛行機マークで送ってね', 70, sw=10)
+            else:
+                outlined(dr, (W / 2, 1210), '毎日1問、心理クイズ', 76, sw=10)
+                outlined(dr, (W / 2, 1320), 'フォローして挑戦しよう', 76, sw=10)
             dr.rounded_rectangle((W / 2 - 330, 1420, W / 2 + 330, 1530), radius=55, fill=INK)
             dr.text((W / 2, 1475), HANDLE, font=font(60), fill=YEL, anchor='mm')
         if c.get('ref'):

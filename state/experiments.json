@@ -41,14 +41,16 @@
  },
  {
   "id": "E004",
-  "status": "backlog",
+  "status": "running",
   "hypothesis": "最後の呼びかけを「コメントで答えて」から「友達に出題してみて（シェア）」に変えるとシェア率が上がる",
   "variable": "cta",
   "control": "comment",
   "treatment": "share",
   "metric": "shares_rate_%",
   "min_n": 4,
-  "threshold": 0.3
+  "threshold": 0.3,
+  "started": "2026-11-30",
+  "note": "030/032=comment、031/033=share。各3本以上必要なので追加の仕様も交互に割り当てる"
  },
  {
   "id": "E005",

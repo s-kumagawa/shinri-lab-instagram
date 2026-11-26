@@ -1,0 +1,30 @@
+{
+ "slug": "quiz-spacing",
+ "type": "quiz",
+ "series": "quiz",
+ "topic": "習慣",
+ "hook": "同じ勉強時間、長く覚えていたのは？",
+ "hypothesis": "E004",
+ "vars": {
+  "format": "brand_v1",
+  "length_s": "14",
+  "cta": "share",
+  "hook_type": "plain",
+  "teaser": "none"
+ },
+ "content": {
+  "no": 15,
+  "q": "同じ勉強時間なら\n長く覚えていられるのは\nどっち？",
+  "choices": [
+   "一気にまとめて",
+   "日を分けて"
+  ],
+  "answer": 1,
+  "reveal": "数百の研究をまとめた分析で\n日を分けて学んだ方が\n長く覚えていると確認された",
+  "term": "分散学習",
+  "ref": "Cepeda et al. (2006) Psychological Bulletin",
+  "teaser": false,
+  "cta": "share"
+ },
+ "caption": "【3秒心理クイズ】同じ勉強時間なら、長く覚えていられるのはどっち？\n\nA：一気にまとめて勉強\nB：日を分けて少しずつ勉強\n\n友達にも出題してみて📩\n何人が正解できるか、紙飛行機マークで送ってね（答えは動画の最後で発表）\n\n.\n.\n.\n\n▼答えと解説\n正解は B：日を分けて\n\n数百の実験をまとめた分析で、同じ時間でも日を分けて学んだ方が、長く覚えていられることが確認されています。これが【分散学習（間隔効果）】です。\n\n一夜漬けより、毎日10分。\n\n出典：Cepeda, Pashler, Vul, Wixted & Rohrer (2006) Psychological Bulletin\n\n━━━━━━━━━━\nしんりラボ｜根拠のある心理学\n毎日1問、研究にもとづく心理クイズ\n→ @shinri.lab.jp\n━━━━━━━━━━\n\n#心理学 #心理クイズ #勉強法 #記憶術 #心理学豆知識"
+}
