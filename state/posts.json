@@ -971,5 +971,26 @@
    "ig_reels_avg_watch_time": 5675
   },
   "follower_delta_d1": 0
+ },
+ {
+  "media_id": "18131498839863033",
+  "permalink": "https://www.instagram.com/reel/DgPf0VKTarV/",
+  "timestamp": "2026-11-27T10:46:21+0000",
+  "type": "reel",
+  "slug": "2026-11-27_quiz-testing",
+  "topic": "習慣",
+  "hook": "1週間後、よく覚えていたのはどっち？",
+  "test": null,
+  "series": "quiz",
+  "format": "quiz",
+  "vars": {
+   "format": "brand_v1",
+   "length_s": "14",
+   "cta": "comment",
+   "hook_type": "plain",
+   "teaser": "none"
+  },
+  "hypothesis": "E006",
+  "duration": 14.0
  }
 ]

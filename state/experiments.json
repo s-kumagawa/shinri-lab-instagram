@@ -74,5 +74,16 @@
   "min_n": 3,
   "threshold": 0.2,
   "started": "2026-11-23"
+ },
+ {
+  "id": "E007",
+  "status": "backlog",
+  "hypothesis": "「自分ならどうする？」と考えさせる場面型の問題は、研究の数字を当てる問題より完走率が高い（#02・#08が上位）",
+  "variable": "q_type",
+  "control": "number",
+  "treatment": "scenario",
+  "metric": "completion_%",
+  "min_n": 3,
+  "threshold": 0.2
  }
 ]
