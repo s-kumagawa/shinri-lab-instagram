@@ -1035,5 +1035,26 @@
    "ig_reels_avg_watch_time": 4141
   },
   "follower_delta_d1": 0
+ },
+ {
+  "media_id": "18026855078712682",
+  "permalink": "https://www.instagram.com/reel/DgSElEUorAa/",
+  "timestamp": "2026-11-28T10:46:09+0000",
+  "type": "reel",
+  "slug": "2026-11-28_quiz-cocktail",
+  "topic": "日常の心理",
+  "hook": "聞いていない耳に、自分の名前。気づく人は？",
+  "test": null,
+  "series": "quiz",
+  "format": "quiz",
+  "vars": {
+   "format": "brand_v1",
+   "length_s": "14",
+   "cta": "comment",
+   "hook_type": "plain",
+   "teaser": "teaser"
+  },
+  "hypothesis": "E006",
+  "duration": 14.0
  }
 ]

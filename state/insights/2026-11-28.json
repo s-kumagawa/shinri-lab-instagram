@@ -1,10 +1,10 @@
 {
- "taken_at": "2026-11-28T19:44:01.461694+09:00",
+ "taken_at": "2026-11-28T19:46:36.683937+09:00",
  "account": {
   "id": "17841473061253620",
   "followers_count": 10,
   "follows_count": 0,
-  "media_count": 19,
+  "media_count": 20,
   "username": "shinri.lab.jp",
   "day": {
    "reach": 0,
@@ -15,6 +15,27 @@
   }
  },
  "media": [
+  {
+   "id": "18026855078712682",
+   "caption": "【3秒心理クイズ】片方の耳の話に集中しているとき、もう片方の耳に自分の名前が流れたら、気づいた人は？\n\nA：約1割\nB：",
+   "comments_count": 0,
+   "like_count": 0,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgSElEUorAa/",
+   "timestamp": "2026-11-28T10:46:09+0000",
+   "insights": {
+    "reach": 0,
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 0,
+    "ig_reels_video_view_total_time": 0
+   }
+  },
   {
    "id": "18131498839863033",
    "caption": "【3秒心理クイズ】同じ文章を勉強して、1週間後によく覚えていたのはどっち？\n\nA：4回読み返した人\nB：1回読んで、3回",
